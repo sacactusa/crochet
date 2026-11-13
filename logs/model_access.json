@@ -1,0 +1,152 @@
+{
+  "gemini_25_key_identifier": "key_25",
+  "gemini_25_key_length": 39,
+  "gemini_38_key_identifier": "key_38",
+  "gemini_38_key_length": 53,
+  "pilot_tested_at": "2026-10-30T21:44:00.529550",
+  "rate_limits": {
+    "gemini-2.5-flash-lite": {
+      "tier": "Free Tier",
+      "rpm": 15,
+      "rpd": 20,
+      "tpm": 1000000,
+      "source": "Empirically Verified from API 429 Error Quota Value (GenerateRequestsPerDayPerProjectPerModel-FreeTier: 20)"
+    },
+    "gemini-2.5-flash": {
+      "tier": "Free Tier",
+      "rpm": 15,
+      "rpd": 20,
+      "tpm": 1000000,
+      "source": "Empirically Verified from API 429 Error Quota Value (GenerateRequestsPerDayPerProjectPerModel-FreeTier: 20)"
+    },
+    "gemini-3.8-flash": {
+      "tier": "Free Tier",
+      "rpm": 15,
+      "rpd": 20,
+      "tpm": 1000000,
+      "source": "Empirically Verified from API Error Quota Value (GenerateRequestsPerDayPerProjectPerModel-FreeTier: 20)"
+    }
+  },
+  "pilot_manipulation_check_results": {
+    "L25L-OFF": {
+      "model_id": "gemini-2.5-flash-lite",
+      "thinking_budget": 0,
+      "total_requests": 5,
+      "successful_requests": 5,
+      "failed_requests": 0,
+      "finish_reasons": [
+        "FinishReason.STOP"
+      ],
+      "any_truncated": false,
+      "thinking_tokens": {
+        "all": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "min": 0,
+        "max": 0,
+        "avg": 0.0,
+        "check_rule": "OFF==0",
+        "check_passed": true
+      },
+      "response_time_seconds": {
+        "min": 0.77,
+        "max": 1.08,
+        "avg": 0.91
+      }
+    },
+    "L25L-ON": {
+      "model_id": "gemini-2.5-flash-lite",
+      "thinking_budget": -1,
+      "total_requests": 5,
+      "successful_requests": 5,
+      "failed_requests": 0,
+      "finish_reasons": [
+        "FinishReason.STOP"
+      ],
+      "any_truncated": false,
+      "thinking_tokens": {
+        "all": [
+          3476,
+          1233,
+          4974,
+          3844,
+          3435
+        ],
+        "min": 1233,
+        "max": 4974,
+        "avg": 3392.4,
+        "check_rule": "ON>0",
+        "check_passed": true
+      },
+      "response_time_seconds": {
+        "min": 5.44,
+        "max": 14.97,
+        "avg": 10.54
+      }
+    },
+    "L25F-OFF": {
+      "model_id": "gemini-2.5-flash",
+      "thinking_budget": 0,
+      "total_requests": 5,
+      "successful_requests": 5,
+      "failed_requests": 0,
+      "finish_reasons": [
+        "FinishReason.STOP"
+      ],
+      "any_truncated": false,
+      "thinking_tokens": {
+        "all": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "min": 0,
+        "max": 0,
+        "avg": 0.0,
+        "check_rule": "OFF==0",
+        "check_passed": true
+      },
+      "response_time_seconds": {
+        "min": 0.99,
+        "max": 1.37,
+        "avg": 1.17
+      }
+    },
+    "L25F-ON": {
+      "model_id": "gemini-2.5-flash",
+      "thinking_budget": -1,
+      "total_requests": 5,
+      "successful_requests": 5,
+      "failed_requests": 0,
+      "finish_reasons": [
+        "FinishReason.STOP"
+      ],
+      "any_truncated": false,
+      "thinking_tokens": {
+        "all": [
+          3114,
+          2688,
+          3557,
+          4815,
+          2454
+        ],
+        "min": 2454,
+        "max": 4815,
+        "avg": 3325.6,
+        "check_rule": "ON>0",
+        "check_passed": true
+      },
+      "response_time_seconds": {
+        "min": 11.95,
+        "max": 22.67,
+        "avg": 16.16
+      }
+    }
+  }
+}

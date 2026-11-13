@@ -1,0 +1,304 @@
+BAB IIIMETODE PENELITIAN
+3.1 Jenis dan Desain Penelitian
+Penelitian ini adalah penelitian eksperimental komputasional yang bersifat komparatif dan evaluatif dengan pendekatan kuantitatif. Eksperimen disebut komputasional karena perlakuan diberikan kepada sistem (translator rule-based dan LLM), bukan kepada manusia, dan data berupa keluaran sistem yang dinilai oleh compiler. Penelitian bersifat komparatif karena rumusan masalah menuntut perbandingan antarkondisi pada tugas dan penilai yang sama, dan evaluatif karena kualitas keluaran dinilai dengan metrik VPR pada CrochetBench-Dstep (Li dkk., 2026). Kerangka ini sejalan dengan pandangan bahwa evaluasi LLM perlu dirumuskan menurut apa, di mana, dan bagaimana evaluasi dilakukan (Chang dkk., 2024). Pada penelitian ini, hal yang dievaluasi adalah kemampuan menerjemahkan instruksi crochet per langkah ke DSL CrochetPARADE, tempatnya adalah CrochetBench-Dstep, dan caranya adalah penilaian otomatis berbasis compiler.
+Desain eksperimennya adalah desain berpasangan dalam item (within-item). Setiap item diperlakukan sebagai satu blok yang menerima seluruh kondisi, sehingga perbedaan antarkondisi dapat dibaca pada item yang sama tanpa tercampur perbedaan tingkat kesulitan antaritem. Karena semua item menerima semua kondisi, yang diacak adalah urutan eksekusi permintaan. Desainnya tidak sepenuhnya silang (fully crossed), sebab kondisi rule-based tidak memiliki faktor model dan reasoning, dan faktor reasoning pada Gemini 2.5 (nonaktif dan aktif) berbeda dari Gemini 3.8 Flash (rendah dan tinggi). Perbandingan karena itu dilakukan sebagai kontras terencana, bukan analisis faktorial penuh. Rumusan masalah pertama dan ketiga bersifat kausal sehingga model, prompt, item, dan penilai dipertahankan sama sedangkan hanya konfigurasi reasoning yang berubah, sementara rumusan masalah kedua bersifat komparatif antarpendekatan.
+Penelitian ini bukan penelitian pengembangan (R&D), survei, maupun mixed method, karena tidak ada siklus validasi oleh pengguna sebagai kontribusi utama dan tidak ada responden. Eksperimen komparatif adalah kontribusi utama, sedangkan aplikasi mobile adalah implementasi pendukung berupa pembuktian konsep yang diuji secara fungsional dengan uji seeded-error. Aplikasi tidak dipakai untuk menjawab rumusan masalah dan tidak diklaim efektif bagi pengguna.
+3.1.1 Variabel Penelitian
+Variabel bebas berupa kondisi eksperimen, yaitu pendekatan translasi, model, dan konfigurasi reasoning. Variabel terikat adalah status validitas kompilasi setiap keluaran, yang diringkas menjadi VPR. Tabel 3.1 merangkum seluruh variabel. Unit analisis adalah satu keluaran DSL untuk satu item pada satu kondisi, berupa keputusan biner valid atau tidak valid menurut compiler pada protokol tertentu, sehingga seluruh perbandingan dilakukan pada pasangan observasi dari item yang sama. Gemini 3.8 Flash tidak dapat dimatikan penalarannya (Google, 2026a, 2026b), sehingga kontras rendah dan tinggi pada model ini tidak diperlakukan sebagai perbandingan tanpa dan dengan reasoning.
+Tabel 3.1 Variabel Penelitian
+Jenis
+Variabel
+Keterangan
+Bebas
+Pendekatan translasi
+Rule-based (A0 dan A1) dan LLM
+Bebas
+Model dan konfigurasi reasoning
+Gemini 2.5 Flash-Lite dan 2.5 Flash (nonaktif atau aktif); Gemini 3.8 Flash (rendah atau tinggi)
+Terikat
+Status validitas kompilasi (VPR)
+Biner per keluaran; dihitung pada protokol Contextual dan Standalone
+Pendukung
+Kelompok langkah, kategori error, thinking token
+Dianalisis secara deskriptif
+Kontrol
+Item, prompt resmi, versi compiler dan translator, parameter sampling bawaan, satu generasi per item per kondisi
+Dipertahankan sama pada seluruh kondisi
+3.1.2 Tahapan Penelitian
+Penelitian dilaksanakan dalam delapan tahap yang diringkas pada Tabel 3.2 dan Gambar 3.1. Tahap 1 sampai 6 membentuk eksperimen utama, sedangkan tahap 7 dan 8 adalah implementasi dan pengujian aplikasi sebagai bagian pendukung.
+Tabel 3.2 Tahapan Penelitian
+No.
+Tahap
+Proses
+Keluaran
+1
+Persiapan dataset
+Melewati 4 item bertarget kosong dari 123 item mentah; menentukan himpunan Standalone dan Contextual
+Himpunan 119 dan 117 item
+2
+Persiapan lingkungan dan pilot
+Menetapkan versi compiler dan translator; memverifikasi konfigurasi reasoning (manipulation check)
+Konfigurasi final dan log pilot
+3
+Eksekusi rule-based
+Menjalankan A0 dan A1 pada tiap item
+Keluaran DSL A0 dan A1
+4
+Eksekusi LLM
+Memanggil API untuk 6 kondisi, satu generasi per item
+Keluaran mentah dan metadata token
+5
+Penilaian compiler
+Kompilasi pada protokol Contextual dan Standalone
+Status valid atau tidak valid dan pesan error
+6
+Analisis data
+Menghitung VPR, analisis berpasangan, per kelompok langkah, analisis error, dan thinking token
+Jawaban rumusan masalah 1 sampai 3
+7
+Implementasi aplikasi
+Merancang dan membangun aplikasi mobile dari hasil tahap 6
+Aplikasi proof of concept (web dan APK)
+8
+Pengujian aplikasi
+Menjalankan uji seeded-error pada 9 pola
+Ringkasan hasil uji fungsional
+Gambar 3.1 Alur Penelitian
+3.2 Dataset Penelitian
+Dataset berasal dari CrochetBench (Li dkk., 2026) dan hanya memakai CrochetBench-Dstep. Setiap item berisi instruksi bahasa alami target, DSL acuan buatan manusia, dan prefiks pasangan instruksi dan DSL dari langkah sebelumnya sebagai contoh in-context. Item dikelompokkan menurut panjang prefiks menjadi early (langkah 1 sampai 2), mid (langkah 1 sampai 4), dan late (langkah 1 sampai 6). Masukan berupa teks tanpa data gambar.
+3.2.1 Seleksi dan Eksklusi Data
+Data mentah Dstep memuat 123 item (54 early, 36 mid, 33 late). Empat item yang instruksi targetnya kosong dilewati sehingga tersisa 119 item (52 early, 34 mid, 33 late) sesuai pelaporan CrochetBench (Li dkk., 2026), dan identitas keempat item dicatat pada log serta dilaporkan pada lampiran. Untuk analisis Contextual, dua item dikeluarkan, yaitu early_15 dan mid_9, karena baris acuannya tidak dapat dikompilasi sehingga prefiks yang dibutuhkan tidak valid. Pengeluaran ini adalah keputusan penelitian ini, bukan definisi resmi CrochetBench. Himpunan 119 item dipakai untuk protokol Standalone (metrik sekunder) dan himpunan 117 item untuk protokol Contextual (metrik primer). Seluruh generasi dilakukan pada 119 item agar sebanding dengan CrochetBench, dan penilaian Contextual memakai keluaran yang sama pada subset 117 item tanpa generasi tambahan. Tabel 3.3 dan Gambar 3.2 merangkum seleksi ini.
+Tabel 3.3 Karakteristik Dataset dan Seleksi Item
+Kelompok
+Mentah
+Standalone
+Contextual
+Data yang dikeluarkan dan alasannya
+Early
+54
+52
+51
+2 item bertarget kosong; early_15 (baris acuan tidak dapat dikompilasi)
+Mid
+36
+34
+33
+2 item bertarget kosong; mid_9 (baris acuan tidak dapat dikompilasi)
+Late
+33
+33
+33
+Tidak ada
+Total
+123
+119
+117
+4 item kosong; 2 item untuk Contextual
+Gambar 3.2 Seleksi Item CrochetBench-Dstep
+3.3 Persiapan Eksperimen
+3.3.1 Lingkungan dan Versi Perangkat Lunak
+Compiler yang dipakai adalah compiler resmi CrochetPARADE (Tassev, 2025). Repositorinya tidak memiliki tag rilis (pada saat penelusuran memuat 0 tag dengan komit terakhir bertanggal 13 Maret 2026), sehingga versi dicatat melalui hash komit. Kompilasi dijalankan lewat harness tanpa antarmuka (headless) yang memanggil penguraian dan kompilasi CrochetPARADE yang sama untuk seluruh kondisi, dan skrip harness disertakan pada lampiran. Translator rule-based yang dipakai adalah deterministic_translator.js dari komit yang sama. Repositori pada komit terbaru juga memuat translator Python yang ditambahkan Maret 2026, tetapi baseline ditetapkan pada translator JavaScript yang juga dipakai pada aplikasi. Seluruh versi, runtime (misalnya Node.js), dan sistem operasi dicatat pada log eksperimen.
+3.3.2 Persiapan Prompt dan Konteks Prefiks
+Seluruh kondisi LLM memakai prompt resmi CrochetBench-Dstep tanpa modifikasi (Li dkk., 2026, Lampiran C.4). Prompt dibangun oleh satu skrip yang sama dari berkas Dstep untuk semua kondisi, lalu disimpan sebagai teks lengkap beserta hash-nya, sehingga masukan identik dan tidak ada penyusunan manual. Kondisi rule-based hanya menerima instruksi bahasa alami target tanpa prefiks contoh karena translator tersebut tidak belajar dari contoh. Perbedaan masukan ini melekat pada sifat kedua pendekatan dan dicatat sebagai batasan. Untuk protokol Contextual, prefiks yang dipakai adalah baris DSL acuan buatan manusia dari langkah 1 sampai t−1, bukan keluaran model pada langkah sebelumnya, sehingga setiap item dinilai independen dan kesalahan model tidak merambat antaritem. Prefiks diverifikasi dapat dikompilasi sebelum dipakai, dan item yang prefiksnya gagal dikeluarkan dari Contextual (early_15 dan mid_9).
+3.3.3 Konfigurasi Model dan API
+Model yang dipanggil adalah gemini-2.5-flash-lite, gemini-2.5-flash, dan gemini-3.8-flash melalui API generateContent dengan SDK resmi Google GenAI yang versinya dicatat pada log. Dokumentasi resmi mencatat bahwa model seri 2.5 tidak dihentikan tetapi aksesnya dibatasi bagi pengguna yang sebelumnya sudah memakainya (Google, 2026c), sehingga ketersediaan akses pada akun peneliti dikonfirmasi dan didokumentasikan. Pada Gemini 2.5, reasoning dinonaktifkan dengan thinkingBudget = 0 dan diaktifkan secara dinamis dengan thinkingBudget = −1. Pada Gemini 3.8 Flash, kontrasnya adalah thinking_level low dan high, sedangkan tingkat minimal tidak didukung dan tingkat bawaan medium tidak diuji (Google, 2026a, 2026b). Parameter sampling memakai nilai bawaan API dan nilai efektifnya dicatat. Pada Gemini 3.8 Flash, parameter temperature, top-p, dan top-k diabaikan oleh backend (Google Cloud, 2026) sehingga tidak diatur.
+Batas max_output_tokens berlaku untuk gabungan token berpikir dan token keluaran (Google, 2026a). Karena batas yang kecil dapat merugikan kondisi reasoning aktif secara tidak adil, seluruh kondisi LLM memakai nilai longgar yang sama, yaitu 32.768 token, dan pilot memeriksa bahwa tidak ada keluaran terpotong. Bila ada, nilai dinaikkan untuk semua kondisi sebelum eksperimen utama. Penelitian memakai Gemini API free tier, dengan batas laju yang berlaku per proyek dan kuota harian yang direset pada tengah malam waktu Pasifik (Google, 2026d). Angka batas aktual per model dicatat dari AI Studio sebelum eksperimen dan dipakai sebagai dasar penjadwalan pelaksanaan.
+3.4 Skenario Eksperimen
+Penelitian menguji delapan kondisi yang masing-masing dinilai pada dua protokol (Tabel 3.4 dan Gambar 3.3). R-A0 dan R-A1 memakai translator yang sama. Pada R-A0 penyaringan oleh compiler dinonaktifkan sehingga translator memakai kandidat teratas menurut aturannya sendiri, sedangkan pada R-A1 penyaringan diaktifkan dengan kandidat dikompilasi pada konteks yang sama seperti penilaian akhir, yaitu bersama prefiks pada Contextual dan sendirian pada Standalone. Pada kondisi LLM, compiler tidak dipakai dalam proses generasi, tidak ada percobaan ulang atas keluaran yang tidak valid, dan hanya satu keluaran per item per kondisi yang dinilai.
+Tabel 3.4 Skenario dan Kondisi Eksperimen
+ID
+Pendekatan
+Model
+Reasoning
+Validator compiler
+Rumusan masalah
+R-A0
+Rule-based
+deterministic_translator.js
+Tidak berlaku
+Tidak
+RM2
+R-A1
+Rule-based dengan pemilihan berpemandu compiler
+Translator yang sama
+Tidak berlaku
+Ya
+RM2
+L25L-OFF
+LLM
+Gemini 2.5 Flash-Lite
+Nonaktif
+Tidak
+RM1, RM2
+L25L-ON
+LLM
+Gemini 2.5 Flash-Lite
+Aktif (dinamis)
+Tidak
+RM1, RM2
+L25F-OFF
+LLM
+Gemini 2.5 Flash
+Nonaktif
+Tidak
+RM1, RM2
+L25F-ON
+LLM
+Gemini 2.5 Flash
+Aktif (dinamis)
+Tidak
+RM1, RM2
+L38F-LOW
+LLM
+Gemini 3.8 Flash
+Tingkat rendah
+Tidak
+RM3
+L38F-HIGH
+LLM
+Gemini 3.8 Flash
+Tingkat tinggi
+Tidak
+RM3
+Hanya kondisi Gemini 2.5 yang membandingkan reasoning nonaktif dan aktif pada model yang sama (RM1). Rumusan masalah kedua membandingkan A0, A1, dan empat kondisi LLM Gemini 2.5, sedangkan kondisi Gemini 3.8 Flash menjawab rumusan masalah ketiga dan tidak diikutkan pada RM2 karena kontras rendah dan tinggi pada model tersebut tidak sepadan dengan kontras nonaktif dan aktif pada Gemini 2.5.
+Gambar 3.3 Skenario Eksperimen dan Proses Penerjemahan hingga Penilaian
+3.5 Prosedur Eksperimen
+Prosedur dijalankan dengan urutan yang sama untuk seluruh kondisi, yaitu instruksi crochet, proses penerjemahan, keluaran DSL, compiler, status valid atau tidak valid, pencatatan hasil, dan evaluasi. Langkah operasionalnya adalah sebagai berikut.
+Pilot: Sebelum eksperimen utama, konfigurasi reasoning diperiksa pada sejumlah kecil item yang hasilnya tidak dimasukkan ke data utama (manipulation check), dengan membaca jumlah token berpikir pada metadata penggunaan. Pada kondisi nonaktif jumlahnya harus nol dan pada kondisi aktif harus lebih dari nol. Kondisi nonaktif yang ternyata memiliki token berpikir ditandai dan diselidiki sebelum eksperimen dilanjutkan.
+Pembentukan dan pengacakan permintaan: untuk setiap item dan kondisi dibuat satu entri (119 item × 8 kondisi = 952 entri), terdiri atas 714 permintaan LLM (6 kondisi × 119 item) dan 238 eksekusi translator rule-based (2 kondisi × 119 item). Urutan permintaan LLM diacak dengan seed tetap agar kondisi tidak terkonfounding dengan waktu, mengingat eksekusi pada free tier dapat memakan beberapa hari akibat batas harian.
+Generasi LLM: hanya respons pertama yang berhasil dipakai. Kegagalan infrastruktur (kode galat 429 atau 5xx) diulang paling banyak tiga kali dengan jeda bertahap, dan item yang tetap gagal dilaporkan sebagai data hilang. Respons dengan DSL tidak valid tidak diulang. Respons kosong, terpotong akibat batas token, atau diblokir model dicatat beserta alasan penghentiannya dan dinilai tidak valid karena merupakan keluaran nyata kondisi tersebut.
+Eksekusi rule-based: A0 dan A1 dijalankan pada instruksi target setiap item. Karena translator deterministik, eksekusi diulang sekali pada seluruh item untuk memverifikasi bahwa keluarannya identik (hash sama).
+Penyimpanan keluaran mentah: setiap permintaan disimpan sebagai satu baris berkas JSONL berisi ID item, ID kondisi, waktu, ID model, parameter yang dikirim, hash prompt, teks respons mentah, alasan penghentian, jumlah token masukan, keluaran, dan berpikir, serta galat bila ada. Keluaran mentah tidak pernah ditimpa dan seluruh pemrosesan dilakukan pada salinan.
+Normalisasi minimal: apabila respons memuat pagar kode atau spasi di tepi, hanya pembersihan deterministik yang sama untuk seluruh kondisi yang dilakukan. Respons yang memuat prosa tambahan atau lebih dari satu baris dicatat sebagai kesalahan pemformatan. Aturan normalisasi dibandingkan dengan skrip evaluasi resmi CrochetBench dan setiap perbedaan dicatat.
+Penilaian compiler: setiap keluaran dikompilasi pada protokol Standalone dan Contextual, dan status serta pesan error pertama dicatat. Sebagian keluaran (misalnya 10%) dikompilasi ulang untuk memastikan hasil kompilasi konsisten.
+Seluruh kondisi dijalankan dalam jendela waktu yang berdekatan karena model dan API dapat berubah dari waktu ke waktu, dan tanggal serta rentang waktunya. Satu generasi per item per kondisi berarti variasi acak sampling tidak dapat dipisahkan dari efek kondisi. Keluaran LLM dapat berbeda antarpengulangan bahkan pada pengaturan yang dianggap deterministik (Atil dkk., 2024), dan hal ini dicatat sebagai keterbatasan.
+3.6 Metode Evaluasi
+3.6.1 Penilaian Berbasis Compiler dan Valid Pattern Rate
+Compiler CrochetPARADE berfungsi sebagai penilai objektif bagi seluruh kondisi dengan memeriksa apakah program DSL valid secara sintaksis, konsisten secara struktural, dan dapat dieksekusi (Li dkk., 2026). Pendekatan ini dipilih karena program yang berbeda secara teks dapat setara, tidak ada program acuan kanonik untuk crochet, dan penilaian berbasis eksekusi lazim pada sintesis program dan antarmuka basis data (Austin dkk., 2021; Khatry dkk., 2023; Liu dkk., 2026). Sebuah keluaran dinyatakan valid bila compiler tidak mengembalikan error pada protokol yang dipakai. Peringatan (warning) tidak dihitung sebagai error tetapi jumlahnya dicatat. Compiler tidak menilai kesesuaian makna, sehingga penelitian hanya menilai validitas struktural.
+VPR dihitung per keluaran (satu item, satu kondisi, satu protokol) dengan rumus pada Subbab 2.6. Penyebutnya adalah 117 pada Contextual dan 119 pada Standalone. Keluaran kosong, terpotong, atau salah format dihitung tidak valid dan tetap berada pada penyebut, sedangkan item yang gagal akibat kendala infrastruktur setelah percobaan ulang dilaporkan terpisah sebagai data hilang. Setiap item berbobot sama, VPR juga dihitung per kelompok early, mid, dan late, dan setiap VPR dilaporkan dengan pembilang, penyebut, dan interval kepercayaan Wilson 95% (Wilson, 1927). Interval ini dipilih karena interval berbasis aproksimasi normal (CLT) cenderung terlalu sempit pada benchmark kecil (Bowyer dkk., 2025).
+3.6.2 Protokol Contextual dan Standalone
+Pada protokol Contextual (metrik primer, 117 item), keluaran target dikompilasi bersama prefiks DSL dari langkah sebelumnya secara berurutan sehingga compiler memiliki keadaan yang tersedia ketika pola dikerjakan, sesuai sifat stateful CrochetPARADE. Pada protokol Standalone (metrik sekunder, 119 item), setiap keluaran dikompilasi sendiri tanpa prefiks, mengikuti protokol CrochetBench agar hasil sebanding dengan penelitian asalnya. Gambar 3.4 membandingkan kedua protokol pada keluaran yang sama.
+Gambar 3.4 Protokol Contextual dan Standalone
+3.6.3 Analisis Error
+Untuk setiap keluaran tidak valid, pesan error pertama dari compiler dicatat dan dipetakan ke kategori awal dari taksonomi CrochetBench (Li dkk., 2026), ditambah ID not Found (Dias & Karim, 2025) serta kategori kesalahan pemformatan dan keluaran kosong atau terpotong. Pesan yang tidak terpetakan ditinjau manual dan dibuatkan kategori baru dengan definisi tertulis, lalu sebagian keluaran (misalnya 20%) dikodekan ulang setelah jeda waktu untuk memeriksa konsistensi. Pengodean dilakukan oleh penulis sebagai pengode tunggal sehingga yang diperiksa adalah konsistensi diri, dan tingkat kesepakatan dilaporkan dalam persen. Jumlah keluaran yang tidak valid pada Standalone tetapi valid pada Contextual dicatat sebagai ukuran kegagalan akibat ketergantungan konteks.
+3.7 Prosedur Analisis Data
+Analisis dirancang agar setiap rumusan masalah memiliki data, perbandingan, metrik, dan keluaran yang jelas (Tabel 3.5). Analisis utama dilakukan pada protokol Contextual (117 item), sedangkan Standalone (119 item) dilaporkan sebagai analisis sekunder dengan prosedur yang sama.
+Tabel 3.5 Pemetaan Rumusan Masalah, Data, dan Analisis
+Rumusan masalah
+Data
+Perbandingan
+Analisis
+RM1
+L25L-OFF, L25L-ON, L25F-OFF, L25F-ON (117 item)
+OFF vs ON pada tiap model
+Selisih berpasangan, uji McNemar eksak, koreksi Holm (2 kontras), interval kepercayaan bootstrap
+RM2
+R-A0, R-A1, dan empat kondisi LLM Gemini 2.5 (117 item)
+Enam kondisi, 15 pasangan
+Uji Q Cochran, McNemar eksak antarpasangan, koreksi Holm (15 kontras)
+RM3
+L38F-LOW dan L38F-HIGH (117 item)
+Rendah vs tinggi
+Selisih berpasangan, McNemar eksak (1 kontras); arah dibandingkan deskriptif dengan RM1
+Pendukung
+Semua kondisi; Standalone (119 item)
+Antarprotokol; per kelompok langkah
+VPR deskriptif dengan interval Wilson; frekuensi error; median dan IQR thinking token
+Hipotesis dirumuskan per kontras, untuk RM1 dan RM3, hipotesis nol menyatakan bahwa peluang sebuah item menjadi valid pada kedua konfigurasi reasoning sama, dan hipotesis alternatifnya menyatakan peluang itu berbeda. Untuk RM2, hipotesis nol menyatakan bahwa keenam kondisi memiliki peluang valid yang sama. Pengujian dua arah dipakai karena reasoning dapat saja menurunkan VPR. Arah dan besar selisih pada RM3 dibandingkan secara deskriptif dengan RM1 dan tidak diuji formal karena modelnya berbeda dan kontrasnya tidak setara.
+Karena setiap item diuji pada semua kondisi, observasi antarkondisi saling berpasangan. Analisis berpasangan menyingkirkan variasi tingkat kesulitan item dari perbandingan sehingga lebih peka daripada membandingkan dua proporsi seolah-olah dari item yang berbeda (Miller, 2024). Untuk satu kontras antara kondisi X dan Y, pasangan dirangkum dalam tabel 2×2, yaitu n11 (valid pada keduanya), n10 (valid hanya pada X), n01 (valid hanya pada Y), dan n00 (tidak valid pada keduanya). Efek dilaporkan sebagai selisih VPR dalam poin persentase, Δ = (n10 − n01) ÷ N × 100. Karena data berupa biner berpasangan dengan N kecil, dipakai uji McNemar eksak (McNemar, 1947), yaitu uji binomial dua arah terhadap n10 dari n10 + n01 pasangan diskordan dengan peluang 0,5 di bawah hipotesis nol. Uji paired t tidak dipakai karena respons bersifat biner, dan aproksimasi chi-square tidak dipakai karena jumlah pasangan diskordan diperkirakan kecil (Bowyer dkk., 2025).
+Interval kepercayaan 95% untuk Δ dihitung dengan bootstrap persentil (Efron & Tibshirani, 1993) melalui 10.000 pengambilan ulang pasangan item dengan seed tetap. Untuk RM2, uji Q Cochran (Cochran, 1950) dipakai sebagai uji omnibus pada enam kondisi, dan bila bermakna, McNemar eksak dijalankan pada 15 pasangan dengan koreksi Holm (Holm, 1979). RM1 membentuk keluarga dua kontras dengan koreksi Holm atas dua uji, dan RM3 satu kontras pada α = 0,05. Klaim bahwa suatu pendekatan memiliki VPR tertinggi hanya dibuat bila pendekatan itu berbeda nyata dari seluruh pembanding setelah koreksi. Bila tidak, hasilnya dilaporkan sebagai tidak dapat dibedakan. Setiap uji dilaporkan bersama Δ dan interval kepercayaannya, tidak hanya nilai p.
+Jumlah item yang terbatas membatasi daya uji. Sebagai ilustrasi, pada uji McNemar eksak dua arah dengan α = 0,05 dan 30 pasangan diskordan, pembagian minimal yang bermakna adalah 21 berbanding 9 (Δ sekitar 10,3 poin pada N = 117), dan dengan koreksi Holm atas 15 uji menjadi sekitar 24 berbanding 6 (Δ sekitar 15,4 poin). Selisih kecil karena itu mungkin tidak terdeteksi, dan hasil yang tidak bermakna dilaporkan sebagai tidak terbukti berbeda, bukan terbukti sama. Analisis pendukung meliputi VPR per kelompok langkah secara deskriptif tanpa uji inferensial karena jumlah item per kelompok kecil, perbedaan antarprotokol pada keluaran yang sama untuk mengukur dampak ketergantungan konteks, dan jumlah thinking token (median, kuartil, dan rata-rata per item) bersama selisih rata-rata total token antara kondisi aktif dan nonaktif sebagai ukuran biaya tambahan (Alomrani dkk., 2025).
+3.8 Implementasi Aplikasi Mobile
+Aplikasi mobile adalah implementasi pendukung yang memperlihatkan bagaimana hasil perbandingan dapat dipakai dalam alat bantu. Aplikasi dibangun sebagai proof of concept berbasis web yang dikonversi menjadi berkas .apk untuk Android dengan Capacitor sebagai pembungkus (Ionic Team, n.d.) dan antarmuka berbasis HTML, CSS, dan JavaScript. Fitur intinya adalah penerjemahan dan validasi per baris, penandaan baris bermasalah, saran perbaikan dari LLM, dan persentase validitas struktural pola. Visualisasi tiga dimensi hanya dikerjakan bila waktu memungkinkan. Gambar 3.5 menunjukkan arsitektur aplikasi dan Tabel 3.6 merinci komponennya.
+Gambar 3.5 Arsitektur Aplikasi Mobile
+Tabel 3.6 Komponen Aplikasi dan Perannya
+Komponen
+Fungsi
+Keterangan
+Masukan pola
+Menerima pola bahasa manusia per baris
+Teks; tanpa gambar
+Translator rule-based
+Menerjemahkan baris menjadi DSL; mesin utama
+Berjalan lokal tanpa internet
+Compiler CrochetPARADE
+Memvalidasi DSL dan memberi pesan error
+Berjalan lokal; penilai bersama
+Penanda error
+Menandai baris bermasalah dan menampilkan pesan compiler
+Berdasarkan pesan compiler
+Saran perbaikan (LLM)
+Mengusulkan kandidat DSL untuk baris yang gagal
+On-demand; wajib lolos compiler
+Persentase validitas
+Menampilkan proporsi baris valid
+Validitas struktural, bukan semantik
+Konfigurasi LLM aplikasi
+Model dan tingkat reasoning untuk saran
+Kondisi dengan VPR tertinggi; bila selisih tidak bermakna, dipilih yang berbiaya token terendah
+Alur kerjanya ditunjukkan pada Gambar 3.6. Pengguna memasukkan pola dalam bahasa manusia per baris. Translator rule-based, sebagai mesin utama yang cepat dan dapat berjalan tanpa koneksi internet, menerjemahkan setiap baris menjadi DSL, lalu compiler CrochetPARADE lokal memvalidasinya dengan konteks baris sebelumnya. Aplikasi menandai baris yang tidak valid beserta pesan compiler dan menghitung persentase baris valid. Untuk baris yang gagal atau berkepercayaan rendah, pengguna dapat meminta saran dari LLM sebagai pendapat kedua. Saran tersebut berstatus kandidat dan baru ditampilkan sebagai perbaikan yang valid bila lolos compiler, sejalan dengan temuan Chen dkk. (2024) tentang manfaat umpan balik eksekusi.
+Gambar 3.6 Alur Proses Aplikasi per Baris
+Dua catatan rancangan perlu ditetapkan. Pertama, prompt aplikasi untuk saran perbaikan berbeda dari prompt eksperimen karena dapat menyertakan pesan compiler. Prompt ini memuat baris instruksi, DSL hasil translator, pesan error, dan baris-baris sebelumnya sebagai konteks, meminta tepat satu baris DSL tanpa penjelasan, dan teks akhirnya dilampirkan. Kedua, menyematkan kunci API pada aplikasi klien berisiko membocorkan kunci, sehingga pada penelitian ini kunci dimasukkan sendiri oleh pengguna dan disimpan pada penyimpanan lokal perangkat, tanpa kunci yang tertanam pada aplikasi.
+3.9 Pengujian Aplikasi
+Pengujian aplikasi dibatasi pada uji fungsional seeded-error terhadap 9 pola, bukan studi pengguna atau uji kegunaan. Tujuannya memeriksa apakah aplikasi dapat mendeteksi dan melokalisasi kesalahan yang sengaja disisipkan, apakah saran perbaikan lolos compiler, dan apakah jalur rule-based berfungsi tanpa koneksi internet. Pola dipilih dari pola yang versi bersihnya dapat diterjemahkan dan dikompilasi, yaitu tiga pola dari tiap kelompok early, mid, dan late. Pada instruksi bahasa manusia disisipkan tiga kesalahan per pola pada baris yang berbeda, masing-masing satu dari tiga jenis yang berpotensi terdeteksi oleh translator dan compiler, yaitu nama stitch yang tidak dikenal, kurung pengulangan yang tidak seimbang, dan rujukan ke label atau baris yang belum ada, sehingga seluruhnya terdapat 27 kesalahan tersisip. Setiap penyisipan dicatat dalam tabel kebenaran dasar (ground truth) yang memuat ID pola, nomor baris, jenis kesalahan, teks asli, dan teks yang disisipi.
+Skenario dijalankan per pola, yaitu (1) pola bersih dimasukkan dan baris yang ditandai dicatat, (2) pola dengan kesalahan dimasukkan dan baris yang ditandai dicatat, (3) untuk baris yang gagal, saran LLM diminta dan dikompilasi, dan (4) jalur rule-based diuji pada mode tanpa koneksi internet. Indikator pada Tabel 3.7 dinilai terhadap ambang keberhasilan yang ditetapkan sebelum pengujian, yaitu tingkat deteksi dan akurasi lokalisasi minimal 90%, alarm palsu paling banyak 10% dari baris bersih, dan jalur offline berjalan pada seluruh pola. Karena jumlah pola kecil, hasil dilaporkan secara deskriptif tanpa uji inferensial.
+Tabel 3.7 Indikator Pengujian Seeded-Error
+Indikator
+Definisi
+Hasil yang dicatat
+Tingkat deteksi
+Kesalahan tersisip yang ditandai ÷ seluruh kesalahan tersisip
+Pembilang, penyebut, persentase
+Akurasi lokalisasi
+Kesalahan yang ditandai pada baris yang benar ÷ kesalahan yang terdeteksi
+Pembilang, penyebut, persentase
+Alarm palsu
+Baris bersih yang ditandai tidak valid ÷ baris bersih
+Jumlah dan persentase
+Validitas saran
+Saran LLM yang lolos compiler ÷ saran yang diminta
+Validitas struktural, bukan semantik
+Jalur offline
+Apakah deteksi rule-based berjalan tanpa internet
+Ya atau tidak per pola
+Waktu respons
+Waktu dari masukan hingga hasil, jalur rule-based dan jalur LLM
+Median dan rentang
+3.10 Validitas dan Keterbatasan Metodologis
+Beberapa keterbatasan metodologis dicatat agar hasil dibaca secara tepat. Pertama, VPR adalah ukuran validitas struktural, sehingga keluaran yang valid belum tentu sesuai maksud instruksi (Li dkk., 2026). Kedua, satu generasi per item per kondisi tidak memisahkan efek kondisi dari variasi sampling (Atil dkk., 2024), dan analisis sensitivitas dengan pengulangan pada subset dapat dilakukan bila kuota memungkinkan sebagai tambahan di luar rancangan utama. Ketiga, dataset hanya 119 item (117 pada Contextual) sehingga daya uji terbatas dan hasil tidak diperlakukan sebagai kesimpulan umum tentang crochet. Keempat, model dan API dapat berubah dan akses ke Gemini 2.5 dibatasi (Google, 2026c), sehingga hasil berlaku untuk versi, tanggal, dan konfigurasi yang dicatat. Kelima, translator rule-based berlabel eksperimental dan menerima masukan tanpa prefiks contoh, berbeda dari LLM, sehingga perbandingannya mencerminkan pendekatan sebagaimana disediakan, bukan batas kemampuan masing-masing. Keenam, protokol Contextual adalah usulan penelitian ini dan memakai baris acuan sebagai prefiks, sehingga hasilnya tidak mencerminkan penumpukan kesalahan model antarlangkah.
+DAFTAR PUSTAKA
+Agustin, D. A., & Affanti, T. B. (2021). Exploration of the crochet technique in room dividers using veterban material. Arty: Jurnal Seni Rupa, 10(1), 53–62. 
+Alomrani, M. A., Zhang, Y., Li, D., Sun, Q., Pal, S., Zhang, Z., Chen, C., Gu, Y., Zhang, X., Zhao, Y., He, J., Han, B., Huang, F., Ruan, K., Wang, Y., Sun, J., & Coates, M. (2025). Reasoning on a budget: A survey of adaptive and controllable test-time compute in LLMs.
+Atil, B., Aykent, S., Chittams, A., Fu, L., Passonneau, R. J., Radcliffe, E., Rastegar-Mojarad, M., & Baldwin, B. (2024). Non-determinism of “deterministic” LLM settings (arXiv:2408.04667). 
+Austin, J., Odena, A., Nye, M., Bosma, M., Michalewski, H., Dohan, D., Jiang, E., Cai, C., Terry, M., Le, Q., & Sutton, C. (2021). Program synthesis with large language models (arXiv:2108.07732).
+Baber, J., Hili, N., Schwab, D., Challier, L., & Satrin, C. (2025). From text to DSL: Evaluating grammar-based model generation using open LLMs. Dalam New trends in intelligent software methodologies, tools and techniques (Frontiers in Artificial Intelligence and Applications).
+Bowyer, S., Aitchison, L., & Ivanova, D. R. (2025). Position: Don’t use the CLT in LLM evals with fewer than a few hundred datapoints. Dalam Proceedings of the 42nd International Conference on Machine Learning (PMLR Vol. 267, hlm. 81143–81184). 
+Çapunaman, Ö. B., Bingöl, C. K., & Gürsoy, B. (2022). From stitches to digits and back: Computational crocheting of branching geometries. Eskişehir Technical University Journal of Science and Technology A - Applied Sciences and Engineering, 23(Special Issue), 76–85. 
+Chang, Y., Wang, X., Wang, J., Wu, Y., Yang, L., Zhu, K., Chen, H., Yi, X., Wang, C., Wang, Y., Ye, W., Zhang, Y., Chang, Y., Yu, P. S., Yang, Q., & Xie, X. (2024). A survey on evaluation of large language models. ACM Transactions on Intelligent Systems and Technology, 15(3), 1–45.
+Chen, X., Lin, M., Schärli, N., & Zhou, D. (2024). Teaching large language models to self-debug. Dalam The Twelfth International Conference on Learning Representations (ICLR 2024).
+Cochran, W. G. (1950). The comparison of percentages in matched samples. Biometrika, 37(3–4), 256–266.
+Comanici, G., Bieber, E., Schaekermann, M., Pasupat, I., Sachdeva, N., Dhillon, I., Blistein, M., Byrne, B., Chen, E., Cho, K., . . . Velic, M. (2025). Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities (arXiv:2507.06261).
+Dellibarda Varela, I., Romero-Sorozabal, P., Rocon, E., & Cebrian, M. (2025). Rethinking the Illusion of Thinking. arXiv e-prints, arXiv-2507.
+Dias, R., & Karim, K. (2025). Translation of user crochet patterns to CrochetPARADE syntax using large language models. Proceedings of the AAAI Symposium Series, 6(1), 200–208. 
+Edelstein, M., Peleg, H., Itzhaky, S., & Ben-Chen, M. (2022). AmiGo: Computational design of amigurumi crochet patterns. Dalam Proceedings of the 7th Annual ACM Symposium on Computational Fabrication (SCF ’22) (Artikel 5, hlm. 1–11). 
+Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman & Hall.
+Google. (2026a). Gemini thinking. Gemini API Documentation. Diakses 2 Oktober 2026, dari https://ai.google.dev/gemini-api/docs/thinking
+Google. (2026b). Gemini 3.8 Flash. Gemini API Documentation. Diakses 2 Oktober 2026, dari https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
+Google. (2026c). Gemini deprecations. Gemini API Documentation. Diakses 2 Oktober 2026, dari https://ai.google.dev/gemini-api/docs/deprecations
+Google. (2026d). Rate limits. Gemini API Documentation. Diakses 2 Oktober 2026, dari https://ai.google.dev/gemini-api/docs/rate-limits
+Google Cloud. (2026). Developer’s guide to Gemini 3.8 Flash. Gemini Enterprise Agent Platform Documentation. Diakses 2 Oktober 2026, dari https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash
+Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70. 
+Ionic Team. (n.d.). Capacitor: Cross-platform native runtime for web apps. Capacitor Documentation. Diakses 17 Oktober 2026, dari https://capacitorjs.com/docs
+Khatry, A., Cahoon, J., Henkel, J., Deep, S., Emani, V., Floratou, A., Negreanu, C., Roy, S., Sanyal, M., & Tiwari, A. (2023). From words to code: Harnessing data for program synthesis from natural language (arXiv:2305.01598).
+Kurniawan, A., Abdiansah, A., & Utami, A. S. (2024). NL2SQL for chatbot with semantic parsing using rule-based methods. Sriwijaya Journal of Informatics and Applications, 5(1), 15-23.
+Li, P., Huang, X., Hua, T., & Chawla, N. V. (2026). CrochetBench: Can vision-language models move from describing to doing in crochet domain? Dalam Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (hlm. 13229–13251). Association for Computational Linguistics.
+Liu, M., Wang, X., Xu, J., Yi, W., & Wolfson, O. (2026). A systematic review of natural language interfaces for databases. Frontiers of Computer Science, 20(11), Artikel 2011623.
+McNemar, Q. (1947). Note on the sampling error of the difference between correlated proportions or percentages. Psychometrika, 12(2), 153–157.
+Miller, E. (2024). Adding error bars to evals: A statistical approach to language model evaluations (arXiv:2411.00640). 
+Minaee, S., Mikolov, T., Nikzad, N., Chenaghlu, M., Socher, R., Amatriain, X., & Gao, J. (2024). Large language models: A survey (arXiv:2402.06196). 
+Seitz, K., Lincke, J., Rein, P., & Hirschfeld, R. (2021). Language and tool support for 3D crochet patterns: Virtual crochet with a graph structure (Technische Berichte des Hasso-Plattner-Instituts, Band 137).
+Seitz, K., Rein, P., Lincke, J., & Hirschfeld, R. (2022). Digital crochet: Toward a visual language for pattern description. Dalam Proceedings of the 2022 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (hlm. 48–62). 
+Shen, L., Chen, X., Liu, R., Wang, H., & Ji, G. (2021). Domain-specific language techniques for visual computing: A comprehensive study. Archives of Computational Methods in Engineering, 28(4), 3113–3134. 
+Tassev, S. (2025). CrochetPARADE: Crochet pattern renderer, analyzer, and debugger [Perangkat lunak]. Codeberg. https://codeberg.org/crochetparade/CrochetPARADE
+Wilson, E. B. (1927). Probable inference, the law of succession, and statistical inference. Journal of the American Statistical Association, 22(158), 209–212. 
+Zarichuk, O. (2023). Comparative analysis of frameworks for mobile application development: Native, hybrid, or cross-platform solutions. Bulletin of Cherkasy State Technological University, 28(4), 19–27. 

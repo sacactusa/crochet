@@ -1,0 +1,144 @@
+{
+  "key_identifier": "key_38",
+  "key_length": 53,
+  "tested_at": "2026-10-30T21:18:22.198237",
+  "model": "gemini-3.8-flash",
+  "classification": {
+    "level_low": "LAYAK",
+    "level_high": "SERVER SIBUK / DEADLINE EXCEEDED & QUOTA EXHAUSTED (RPD=20)",
+    "overall": "SATU LEVEL BERHASIL (LOW), SATU LEVEL GAGAL (HIGH: 503/504/429)"
+  },
+  "trials": [
+    {
+      "timestamp": "2026-10-30T20:44:03.857969",
+      "attempt": 1,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "low",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "low",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "SUCCESS",
+      "http_status": 200,
+      "elapsed_seconds": 116.51,
+      "thoughts_token_count": 2481,
+      "prompt_token_count": 253,
+      "candidates_token_count": 9,
+      "finish_reason": "FinishReason.STOP",
+      "raw_response": "2ch, 14hdc, turn",
+      "error": null
+    },
+    {
+      "timestamp": "2026-10-30T20:46:00.463495",
+      "attempt": 1,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": 503,
+      "elapsed_seconds": 70.0,
+      "error_raw": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-30T20:52:10.511295",
+      "attempt": 2,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": 503,
+      "elapsed_seconds": 13.52,
+      "error_raw": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-30T20:57:24.085021",
+      "attempt": 3,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": "ERROR",
+      "elapsed_seconds": 119.47,
+      "error_raw": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    {
+      "timestamp": "2026-10-30T21:04:23.607435",
+      "attempt": 4,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": "ERROR",
+      "elapsed_seconds": 119.17,
+      "error_raw": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    {
+      "timestamp": "2026-10-30T21:11:22.844571",
+      "attempt": 5,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": "ERROR",
+      "elapsed_seconds": 118.81,
+      "error_raw": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    {
+      "timestamp": "2026-10-30T21:18:21.702414",
+      "attempt": 6,
+      "model": "gemini-3.8-flash",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "params_sent": {
+        "thinking_level": "high",
+        "max_output_tokens": 32768,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+      },
+      "status": "FAILED",
+      "http_status": "ERROR",
+      "elapsed_seconds": 0.46,
+      "error_raw": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 16h41m39.464765132s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '60099s'}]}}"
+    }
+  ]
+}

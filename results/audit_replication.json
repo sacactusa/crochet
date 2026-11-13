@@ -1,0 +1,75 @@
+{
+  "run1_line_by_line": {
+    "total": 320,
+    "standalone_valid": 186,
+    "standalone_rate": "58.13%",
+    "contextual_valid": 314,
+    "contextual_rate": "98.13%",
+    "contextual_failures": [
+      {
+        "gid": "early_15",
+        "lineIdx": 0,
+        "line": "16ch, turn`",
+        "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: turn`\nContext:\n  stage: parse_StitchCode\n  row/round: 0\n  node/stitch: turn`\n  attachment: {\"0\":\"\"}\n  last parsed stitch: ch\n  last parsed stitch id(s): [15]\n  statement: {\"contents\":\"16*ch\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":0,\"index\":[1,7]}\n  pattern snippet: (16ch),turn`\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\"."
+      },
+      {
+        "gid": "mid_9",
+        "lineIdx": 2,
+        "line": "6inc2sc",
+        "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: inc2sc\nContext:\n  stage: parse_StitchCode\n  row/round: 2\n  node/stitch: inc2sc\n  attachment: {\"0\":\"\"}\n  label: A\n  reference id: 0\n  last parsed stitch: sc\n  last parsed stitch id(s): [6]\n  statement: {\"contents\":\"6*inc2sc\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":2,\"index\":[18,27]}\n  pattern snippet: ring.A,\n(6sc)@A\n(6inc2sc)\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\"."
+      },
+      {
+        "gid": "mid_27",
+        "lineIdx": 2,
+        "line": "[ch, 13scfl, turn",
+        "error": "Unbalanced brackets in original text.\nContext:\n  stage: final\n  pattern snippet: 14ch, turn\nsk, 13sc, turn\n[ch, 13scfl, turn"
+      },
+      {
+        "gid": "late_8",
+        "lineIdx": 3,
+        "line": "[2ch, 158hdcbl,turn",
+        "error": "Unbalanced brackets in original text.\nContext:\n  stage: final\n  pattern snippet: 160ch, turn\n2sk, 158hdc, turn\n2ch, 158hdcbl,turn\n[2ch, 158hdcbl,turn"
+      },
+      {
+        "gid": "late_12",
+        "lineIdx": 3,
+        "line": "[sk,12sc,ss@[%,0]",
+        "error": "Unbalanced brackets in original text.\nContext:\n  stage: final\n  pattern snippet: 3ch, ss@[%,0]\nch, 3sc2inc,ss@[%,0]\nsk,6sc2inc, ss@[%,0]\n[sk,12sc,ss@[%,0]"
+      },
+      {
+        "gid": "late_22",
+        "lineIdx": 3,
+        "line": "[2ch,54hdc, turn",
+        "error": "Unbalanced brackets in original text.\nContext:\n  stage: final\n  pattern snippet: 54ch, turn\n2sk,52hdc, turn\n2ch, hdc, hdc2inc, 48hdc, hdc2inc, hdc, turn\n[2ch,54hdc, turn"
+      }
+    ]
+  },
+  "run2_multiline_joined": {
+    "total": 320,
+    "standalone_valid": 189,
+    "standalone_rate": "59.06%",
+    "contextual_valid": 318,
+    "contextual_rate": "99.38%",
+    "contextual_failures": [
+      {
+        "gid": "early_15",
+        "lineIdx": 0,
+        "line": "16ch, turn`",
+        "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: turn`\nContext:\n  stage: parse_StitchCode\n  row/round: 0\n  node/stitch: turn`\n  attachment: {\"0\":\"\"}\n  last parsed stitch: ch\n  last parsed stitch id(s): [15]\n  statement: {\"contents\":\"16*ch\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":0,\"index\":[1,7]}\n  pattern snippet: (16ch),turn`\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\"."
+      },
+      {
+        "gid": "mid_9",
+        "lineIdx": 2,
+        "line": "6inc2sc",
+        "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: inc2sc\nContext:\n  stage: parse_StitchCode\n  row/round: 2\n  node/stitch: inc2sc\n  attachment: {\"0\":\"\"}\n  label: A\n  reference id: 0\n  last parsed stitch: sc\n  last parsed stitch id(s): [6]\n  statement: {\"contents\":\"6*inc2sc\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":2,\"index\":[18,27]}\n  pattern snippet: ring.A,\n(6sc)@A\n(6inc2sc)\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\"."
+      }
+    ]
+  },
+  "proposal_report": {
+    "total": 320,
+    "standalone_valid": 189,
+    "standalone_rate": "59.06%",
+    "contextual_valid": 318,
+    "contextual_rate": "99.38%"
+  }
+}

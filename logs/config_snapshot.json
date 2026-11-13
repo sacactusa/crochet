@@ -1,0 +1,72 @@
+{
+  "snapshot_metadata": {
+    "created_at_wib": "2026-11-11T20:16:30+07:00",
+    "created_at_pt": "2026-11-11T05:16:30-08:00",
+    "run_daily_sha256": "6eba814bc477bed1f3b24c11375530962afa24d8f1089ed89c0384102f5e6322",
+    "backup_path": "backups/src_2026-11-11/",
+    "notes": "Snapshot of formal experiment configuration per condition from data/experiment_queue.json. Affirms that temperature, top_p, and top_k are omitted (None) to enforce Google API default model sampling as designed."
+  },
+  "conditions": {
+    "L25L-OFF": {
+      "model_id": "gemini-2.5-flash-lite",
+      "family": "2.5",
+      "thinking_budget": 0,
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    },
+    "L25L-ON": {
+      "model_id": "gemini-2.5-flash-lite",
+      "family": "2.5",
+      "thinking_budget": -1,
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    },
+    "L25F-OFF": {
+      "model_id": "gemini-2.5-flash",
+      "family": "2.5",
+      "thinking_budget": 0,
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    },
+    "L25F-ON": {
+      "model_id": "gemini-2.5-flash",
+      "family": "2.5",
+      "thinking_budget": -1,
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    },
+    "L38F-LOW": {
+      "model_id": "gemini-3.8-flash",
+      "family": "3.8",
+      "thinking_level": "low",
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    },
+    "L38F-HIGH": {
+      "model_id": "gemini-3.8-flash",
+      "family": "3.8",
+      "thinking_level": "high",
+      "max_output_tokens": 32768,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_policy": "default_model_sampling_not_sent"
+    }
+  }
+}
+

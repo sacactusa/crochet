@@ -1,0 +1,46 @@
+{
+  "empty_target_items_count": 4,
+  "empty_target_items": [
+    {
+      "item_key": "early_16",
+      "id": "RHC0110-019300M",
+      "pattern_name": "Infinite Shells Cowl",
+      "reason": "Instruksi target kosong"
+    },
+    {
+      "item_key": "early_27",
+      "id": "RHC0502-014734M",
+      "pattern_name": "Poinsettia Afghan",
+      "reason": "Instruksi target kosong"
+    },
+    {
+      "item_key": "mid_14",
+      "id": "SCC0504-036093M",
+      "pattern_name": "Toadstool Treasure Crochet Basket",
+      "reason": "Instruksi target kosong"
+    },
+    {
+      "item_key": "mid_24",
+      "id": "RHC0125-030091M",
+      "pattern_name": "Alpine Crochet Pocket Scarf",
+      "reason": "Instruksi target kosong"
+    }
+  ],
+  "invalid_prefix_contextual_count": 2,
+  "invalid_prefix_contextual_items": [
+    {
+      "item_key": "early_15",
+      "id": "BRC0427-007504M",
+      "pattern_name": "Crochet Loafers",
+      "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: turn`\nContext:\n  stage: parse_StitchCode\n  row/round: 0\n  node/stitch: turn`\n  attachment: {\"0\":\"\"}\n  last parsed stitch: ch\n  last parsed stitch id(s): [15]\n  statement: {\"contents\":\"16*ch\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":0,\"index\":[1,7]}\n  pattern snippet: (16ch),turn`\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\".",
+      "prefix": "16ch, turn`"
+    },
+    {
+      "item_key": "mid_9",
+      "id": "RHC0234-021038M",
+      "pattern_name": "One-Eyed Monster Rattle",
+      "error": "Stitch type not defined in Dictionary. Please, add it. Stitch: inc2sc\nContext:\n  stage: parse_StitchCode\n  row/round: 2\n  node/stitch: inc2sc\n  attachment: {\"0\":\"\"}\n  label: A\n  reference id: 0\n  last parsed stitch: sc\n  last parsed stitch id(s): [6]\n  statement: {\"contents\":\"6*inc2sc\",\"at\":{\"0\":\"\"},\"at_uid\":{\"0\":null},\"dot\":[],\"nrow\":2,\"index\":[18,27]}\n  pattern snippet: ring.A,\n(6sc)@A\n(6inc2sc)\nTip: Use a built-in stitch name or define it with DEF:. Example: \"DEF: mystitch=...\" then use \"mystitch\".",
+      "prefix": "ring.A,\n6sc@A\n6inc2sc"
+    }
+  ]
+}

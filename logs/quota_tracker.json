@@ -1,0 +1,5413 @@
+{
+  "events": [
+    {
+      "timestamp": "2026-10-30T22:28:59.139889",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0001",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:29:04.725124",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0004",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:29:25.401962",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0005",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:29:43.457742",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0008",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:29:50.789459",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0009",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:29:59.852199",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0011",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:05.120470",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0012",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:10.987335",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0014",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:22.254598",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0017",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:44.570106",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0018",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:49.955681",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0019",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:30:58.392681",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0020",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:31:04.040918",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0021",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:31:09.666094",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0023",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-30T22:31:14.740421",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0024",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 15h28m47.03618982s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55727s'}]}}"
+    },
+    {
+      "timestamp": "2026-10-31T15:49:37.653402",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0002",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T15:49:40.218378",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0024",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T15:49:58.281022",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0024",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:03.942788",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0026",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:15.286022",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0027",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:29.004094",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0028",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:34.557848",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0030",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:39.953091",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0031",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:45.599709",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0032",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:51.047207",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0035",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:50:56.572410",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0036",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:03.639418",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0037",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:09.207532",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0038",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:15.104467",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0040",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:20.950510",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0045",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:36.722396",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0046",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:51:42.446039",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0047",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:00.838373",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0048",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:06.726939",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0050",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:12.243768",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0051",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:17.775471",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0052",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:23.879259",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0054",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:39.215568",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0056",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:52:44.916051",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0057",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:53:05.796997",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0058",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:53:11.430586",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0059",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:53:18.499996",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0060",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:53:42.673452",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0063",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:53:52.700087",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0064",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:08.674627",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0065",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:14.202841",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0067",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:19.636393",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0068",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:27.731847",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0069",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:33.828420",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0070",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:41.654183",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0071",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:47.274500",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0072",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:52.296791",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0074",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 22h5m9.539971454s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79509s'}]}}"
+    },
+    {
+      "timestamp": "2026-10-31T15:54:57.520640",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0076",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:55:03.252384",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0077",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:55:09.601399",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0080",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:55:26.168561",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0087",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:55:31.735056",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0088",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:55:37.272862",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0091",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:56:11.785801",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0092",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-10-31T15:57:04.816491",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0094",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 22h2m57.000816407s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash-lite', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79377s'}]}}"
+    },
+    {
+      "timestamp": "2026-10-31T15:59:47.910011",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0002",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-10-31T16:00:21.991083",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0002",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T16:10:27.673114",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-10-31T16:20:38.211613",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-10-31T16:23:39.954849",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0002",
+      "event_type": "POLICY_UPDATE_RESTORE",
+      "status_code": 200,
+      "message": "REQ-0002 restored from failed to pending per multi-day retry policy."
+    },
+    {
+      "timestamp": "2026-10-31T16:44:01.403691",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0006",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T16:44:32.596721",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0006",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T16:45:10.849590",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0007",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-10-31T16:45:41.868261",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0007",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-01T18:22:27.356638",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0074",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:22:32.964772",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0075",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:22:38.488553",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0078",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:22:58.701473",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0079",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:04.376971",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0083",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:10.068808",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0086",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:15.025914",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0089",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 45.639789192s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:16.002501",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0094",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:26.177476",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0096",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:23:40.265813",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0105",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:05.058391",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0107",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:10.682337",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0116",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:16.215137",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0117",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:21.947297",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0119",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:33.629707",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0122",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:39.049405",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0126",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:44.582334",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0133",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:24:59.081960",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0134",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:25:04.711921",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0139",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:25:29.839693",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0147",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:25:35.510673",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0150",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:26:26.553947",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0002",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:36:32.122371",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T18:47:02.594172",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T18:47:19.077470",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0006",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:49:03.574596",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0007",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:52:20.813106",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0010",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:53:01.275224",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0013",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T18:57:01.278449",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10053] An established connection was aborted by the software in your host machine"
+    },
+    {
+      "timestamp": "2026-11-01T19:03:07.058992",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10053] An established connection was aborted by the software in your host machine"
+    },
+    {
+      "timestamp": "2026-11-01T19:52:49.602761",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T20:17:40.699957",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-01T20:24:12.204173",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-01T21:21:38.697325",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T21:23:07.947280",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0025",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T21:33:13.523778",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T21:43:50.691237",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T21:53:56.655922",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0033",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T21:56:57.994895",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0033",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T22:07:04.034967",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T22:17:34.570032",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-01T22:20:09.762536",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0039",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T22:24:01.933954",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0041",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T22:27:19.500859",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0042",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T22:27:26.797501",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0043",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-01T22:28:10.916838",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0043",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-01T22:28:17.197738",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0044",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 16h31m43.481141018s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59503s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-02T21:31:39.669627",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0089",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:31:53.749319",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0152",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:33:32.943476",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0090",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:33:46.926594",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0095",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:34:18.752250",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0099",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:34:50.018861",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0101",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:35:15.696203",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0102",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:36:08.555347",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0103",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:36:31.239119",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0104",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:36:56.861354",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0108",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:37:14.907155",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0109",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:37:29.121151",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0114",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:38:09.887589",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0123",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:38:34.751302",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0127",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:38:49.216254",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0129",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:39:06.607328",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0130",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:39:23.525811",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0131",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:39:37.946961",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0135",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:40:23.908078",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0137",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:40:46.027103",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0138",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:00.100913",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0142",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:14.167574",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0162",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:27.554839",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0163",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:32.919602",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0165",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:38.339408",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0172",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:43.854700",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0177",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:41:51.237700",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0180",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:42:02.539698",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0184",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:42:16.290536",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0186",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:42:26.881642",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0187",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:43:10.301455",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0191",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:43:15.759493",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0193",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:43:21.214860",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0194",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:43:26.706055",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0198",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:43:32.418306",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0202",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:44:42.799465",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0205",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:46:27.767087",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0206",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:46:54.204226",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0207",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:47:18.028523",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0211",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-02T21:47:30.091617",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0211",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:47:44.246066",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0214",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-02T21:47:52.175025",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-02T21:48:27.032319",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0003",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-03T22:21:34.663567",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0144",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:21:49.022093",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0149",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:22:10.642959",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0153",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:22:48.808588",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0154",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:23:03.336246",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0158",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:23:17.673860",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0159",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:23:31.908513",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0160",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:24:13.687065",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0174",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:24:28.507223",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0176",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:24:50.888864",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0178",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:25:05.342881",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0179",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:25:19.402606",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0182",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:25:37.291280",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0189",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:26:12.795752",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0192",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:27:18.344342",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0195",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:27:32.607102",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0196",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:28:00.086892",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0199",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:28:22.542429",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0200",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:28:38.781974",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0201",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:29:16.597500",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0204",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:29:30.579901",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0217",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:29:38.483868",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0220",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:29:43.946524",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0221",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:29:57.373243",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0223",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:30:02.702660",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0224",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:30:28.606997",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0227",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:30:36.855747",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0228",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:30:43.486870",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0232",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:31:10.440963",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0234",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:31:22.573001",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0240",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-03T22:31:53.024020",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0240",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:07.901082",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0243",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:14.881899",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0248",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:25.916837",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0255",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:31.554054",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0259",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:37.288958",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0260",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:43.221411",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0265",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:48.648050",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0268",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:32:54.647146",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0270",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:33:34.107932",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0273",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:33:45.582742",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0278",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-03T22:43:51.252308",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-04T16:30:05.812324",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0209",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:30:31.376525",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0212",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:30:47.321262",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0213",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:31:19.061255",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0216",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:31:33.810593",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0219",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:31:56.529433",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0226",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:32:22.036257",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0229",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:32:37.590042",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0231",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:32:58.296915",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0233",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:33:15.128811",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0237",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:33:30.423057",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0238",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:33:44.602524",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0239",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:34:04.615933",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0239",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:34:37.018385",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0242",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:35:04.743289",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0244",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:35:19.170515",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0245",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:35:34.216459",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0246",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:35:48.785782",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0247",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:36:10.763281",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0251",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:36:25.227265",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0254",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:36:39.886751",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0261",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:04.760093",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0279",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:10.190859",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0280",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:21.554858",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0281",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:27.009049",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0282",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:34.129050",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0284",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:39.557738",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0286",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:45.293636",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0287",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:37:50.900359",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0293",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:16.119712",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0294",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:24.312232",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0297",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:29.874164",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0300",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:35.472763",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0302",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:40.899087",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0307",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:46.627762",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0310",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:52.157119",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0314",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:38:57.632857",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0320",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:39:03.216144",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0324",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:39:08.625844",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0326",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:39:14.407756",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0327",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:39:20.031553",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0328",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-04T16:39:28.854271",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:40:02.623415",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:40:12.741073",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:40:45.308725",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:41:02.718465",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:41:34.046985",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:41:41.547311",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:42:13.886771",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:42:20.764194",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:44:07.552825",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:44:59.903364",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0044",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:46:26.926980",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0044",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:46:34.277675",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:47:06.472016",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:47:12.994565",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0053",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:47:56.398884",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0053",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:48:11.969371",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0055",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:48:56.616720",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0055",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:49:09.887900",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0061",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:49:45.712796",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0061",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:49:52.684986",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0062",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-04T16:50:23.294090",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0062",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 22h9m38.45157323s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79778s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:37:13.152067",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0262",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:37:32.235703",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0263",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:37:47.700813",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0264",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:38:01.866890",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0267",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:38:20.933557",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0272",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:38:37.242706",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0274",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:38:49.626713",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0274",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:39:28.440458",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0274",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:39:43.868912",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0276",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:40:51.287869",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0285",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:41:08.583006",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0289",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:41:22.716126",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0289",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:41:59.886322",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0291",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:42:16.375246",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0295",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:42:36.134047",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0298",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:42:53.057157",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0301",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:43:29.200601",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0303",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:43:52.039920",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0305",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:06.554553",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0306",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:21.112432",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0309",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:35.322628",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0313",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:48.846763",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0315",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 21h15m13.659882155s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '76513s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:49.886744",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0331",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:44:57.709489",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0332",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:45:11.313558",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0332",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:45:16.898680",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0335",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:45:30.311532",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:45:59.221812",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:46:31.658460",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:46:39.847105",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0341",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:46:52.275506",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0341",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:47:23.778845",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0341",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:47:30.328075",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0346",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:47:35.753815",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0349",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:47:41.487179",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0351",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:47:56.542726",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0351",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:48:29.710620",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0351",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:48:36.581784",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0358",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:48:42.137797",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0363",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:48:47.549311",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0364",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:49:05.151443",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0367",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:49:11.929718",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0372",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:49:17.846835",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0378",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-05T17:49:22.888134",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0379",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 21h10m39.67125678s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '76239s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-05T17:50:52.462884",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T18:21:11.333635",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T18:21:11.379384",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-05T19:54:49.022184",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-05T20:34:51.244664",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-06T20:45:38.513875",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0315",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:45:52.802624",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0321",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:46:10.564702",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0330",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:46:24.938364",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0333",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:46:38.977133",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0338",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:47:34.115865",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0340",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:47:48.707189",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0344",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:48:03.833520",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0348",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:48:18.397937",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0350",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:48:39.830342",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0352",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:48:54.166970",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0357",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:49:08.597608",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0359",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:49:53.142435",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0362",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:50:07.638524",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0365",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:50:48.075890",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0368",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:51:03.000458",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0369",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:51:34.123597",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0370",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:52:20.212672",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0371",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:52:41.329602",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0375",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:52:56.268756",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0376",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:53:13.075380",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0379",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:53:25.666084",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0381",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:53:45.036874",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0384",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:53:50.645182",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0386",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:53:56.177818",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0388",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:01.803567",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0393",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:27.950729",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0395",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:34.575156",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0396",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:40.114347",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0397",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:45.840641",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0407",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:54:51.417618",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0414",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:55:19.630706",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0415",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:55:33.761505",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0416",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:55:47.306687",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0421",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:56:10.970085",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0423",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:56:16.451842",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0426",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:56:21.871846",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0431",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:56:27.202169",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0432",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:56:39.286956",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0437",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T20:57:02.090794",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0438",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-06T21:07:04.271907",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-08T15:30:23.742795",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0380",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:30:43.955277",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0383",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:30:58.678260",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0390",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:31:21.338083",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0391",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:32:08.198407",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0392",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:32:29.959015",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0394",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:32:45.790705",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0398",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:32:59.907676",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0402",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:33:14.136672",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0404",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:33:31.858080",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0405",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:33:56.150395",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0408",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:34:30.738272",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0418",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:35:18.064814",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0420",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:35:42.209240",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0424",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:35:56.527085",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0429",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:36:10.903632",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0430",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:36:36.809710",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0435",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:36:56.021107",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0436",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:37:10.402966",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0439",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:37:26.076605",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0440",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:37:40.190987",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0441",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:37:58.084419",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0443",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:38:03.888543",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0446",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:38:25.637631",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0447",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:38:46.861752",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0448",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:01.385335",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0450",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:07.011270",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0452",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:12.583399",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0454",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:18.083434",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0459",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:41.104988",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0461",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:39:46.639734",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0465",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:40:04.087920",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0471",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:40:22.686338",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0473",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:40:52.506754",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0476",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:41:10.301803",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0478",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:41:16.029390",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0480",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:41:32.441512",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0482",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:41:37.846635",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0484",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:41:43.467443",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0491",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:42:23.837050",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0493",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T15:45:00.428490",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0015",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T16:33:20.578240",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-08T18:42:32.095179",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-08T20:30:02.714073",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10051] A socket operation was attempted to an unreachable network"
+    },
+    {
+      "timestamp": "2026-11-08T21:06:00.446975",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0022",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-08T21:46:01.833589",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-08T22:26:02.721229",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-08T22:56:09.244425",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-08T23:36:10.369770",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T00:16:11.802051",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0044",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T07:30:33.100948",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0044",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:30:18.901168",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0442",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:30:33.032074",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0445",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:30:47.173383",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0449",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:31:01.346130",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0453",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:31:25.394403",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0455",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:31:53.021900",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0456",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:32:07.205634",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0457",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:32:21.321308",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0458",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:32:35.668596",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0460",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:32:49.942521",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0463",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:33:32.937988",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0464",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:33:47.436407",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0466",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:34:02.442726",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0468",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:34:23.346862",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0472",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:34:37.651335",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0474",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:34:52.673421",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0477",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:35:07.222136",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0481",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:35:21.521226",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0483",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:35:43.649287",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0487",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:35:57.247819",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0488",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 23h24m4.593078202s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '84244s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-09T15:36:02.191088",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0495",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:36:19.812885",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0496",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:36:26.726544",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0497",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T15:36:49.778804",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0497",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:37:05.727341",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0498",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:37:23.466353",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0505",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T15:38:04.875573",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0505",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:38:27.506222",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0507",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:38:34.383155",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0509",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:38:40.100163",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0511",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:38:53.864506",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0513",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:39:00.079884",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0518",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:39:06.428394",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0520",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T15:40:11.045608",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0520",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:40:16.812382",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0521",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:40:22.428649",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0522",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:40:31.288447",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0523",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:41:00.929163",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0525",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:41:19.787688",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0530",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:41:25.194694",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0532",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:41:47.998533",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0533",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-09T15:41:52.990821",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0537",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 23h18m8.824999532s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '83888s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-09T15:42:08.965219",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T16:16:08.887030",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T16:16:08.952480",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-09T17:56:09.911492",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T18:36:10.463566",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T19:16:11.099785",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T19:56:11.773331",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-09T20:26:15.961027",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-09T21:06:16.655499",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-11T20:07:05.319894",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0488",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:07:21.982303",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0504",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:07:36.428331",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0510",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:08:08.113340",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0512",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:08:26.963494",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0512",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:09:01.128035",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0512",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:09:26.258864",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0514",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:09:38.904997",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0514",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:10:19.586672",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0514",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:10:36.251667",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0515",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:10:50.697216",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0515",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:11:07.529786",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0517",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:11:24.196290",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0519",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:11:49.052458",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0519",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:12:25.818446",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0524",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:12:58.476282",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0526",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:13:17.745619",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0528",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:13:32.889366",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0529",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:14:07.835851",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0531",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:14:23.371202",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0536",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:14:41.285259",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0537",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:14:51.252491",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0538",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:15:03.199433",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0538",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:15:47.221733",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0538",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:16:08.742209",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0539",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:16:32.103670",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0540",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:16:39.975326",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0542",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:16:45.469968",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0543",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:16:51.169401",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0545",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:17:05.157367",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0549",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h42m55.754777643s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '67375s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:17:08.588138",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0551",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:17:16.787145",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0557",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:17:51.579735",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0557",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:00.772012",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0559",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:21.047936",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0559",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:26.577882",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0560",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:32.302318",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0562",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:41.835216",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0566",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:18:50.186062",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0569",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:19:01.472923",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0569",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:19:07.120288",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0573",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:19:30.513882",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0577",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:19:36.213032",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0578",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-11T20:19:41.085876",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0582",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h40m19.786921059s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '67219s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-11T20:29:41.855197",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-12T17:49:09.680998",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0549",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:49:24.114391",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0550",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:49:38.221755",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0554",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:49:52.544099",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0556",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:50:06.974355",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0558",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:50:41.648416",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0561",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:51:23.534664",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0563",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:51:41.318026",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0570",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:51:55.607836",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0571",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:52:10.064213",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0572",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:52:49.461805",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0574",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:53:05.832833",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0575",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:53:20.263047",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0580",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:53:55.628662",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0581",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:54:09.670687",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0582",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:54:24.515938",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0583",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:54:38.708611",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0585",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:55:23.660146",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0587",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:55:29.627582",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0589",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:55:38.139438",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0592",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:55:52.212273",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0594",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T17:56:08.272260",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0594",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:56:13.847159",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0596",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:56:36.574737",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0597",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:57:03.056233",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0598",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T17:57:16.612336",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0598",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:57:32.643675",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0600",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:57:53.587269",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0602",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:58:07.823604",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0603",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:58:13.178025",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0605",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:58:18.739783",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0610",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:58:45.171152",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0612",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:59:03.645103",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0614",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:59:11.993063",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0616",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:59:29.371130",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0617",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T17:59:34.842181",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0620",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:01.149154",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0621",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:06.655718",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0626",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:14.278512",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0630",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:19.758248",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0631",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:30.509497",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0635",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T18:00:35.537315",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0636",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 20h59m25.260434921s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '75565s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-12T18:01:04.908608",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T18:32:18.310451",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T18:32:18.361456",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-12T20:12:19.314857",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-12T20:45:57.900810",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0029",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-12T21:16:06.914453",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T21:56:08.407865",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-12T22:26:11.433808",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-12T22:26:11.510412",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-13T08:39:53.643553",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-13T16:34:46.547455",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0604",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:35:11.140228",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0609",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:35:25.366877",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0613",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:36:14.254372",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0615",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:36:30.335732",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0623",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:37:16.049494",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0627",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:37:30.462490",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0628",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:37:44.974678",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0629",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:37:58.958835",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0636",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:38:07.747833",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0637",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:38:28.221679",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0639",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:38:42.169817",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0640",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:38:59.057657",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0642",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:39:37.965635",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0643",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:40:20.892354",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0645",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:40:26.664408",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0646",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:40:49.998812",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0647",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:40:59.763774",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0648",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:41:15.591372",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0649",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:41:21.638233",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0650",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:41:42.630512",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0651",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:41:57.038940",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0652",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:42:21.624053",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0657",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:43:00.753195",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0659",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:43:19.753025",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0660",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:43:25.257636",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0661",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:44:07.069454",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0662",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:44:12.937843",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0663",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:44:36.416329",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0664",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:44:55.239880",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0665",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:45:05.514625",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0666",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:45:20.158439",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0667",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:45:34.688241",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0668",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:45:49.408516",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0669",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:45:54.848429",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0670",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:46:25.645004",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0672",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:46:31.279675",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0680",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:46:36.865935",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0681",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:47:21.081835",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0683",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-13T16:47:26.081207",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0684",
+      "event_type": "QUOTA_EXHAUSTED_429",
+      "status_code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 22h12m34.871995854s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79954s'}]}}"
+    },
+    {
+      "timestamp": "2026-11-13T16:49:47.905788",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-13T17:19:54.792040",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0016",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-13T17:51:07.603910",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-13T17:51:07.656477",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-13T19:21:16.521148",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-13T19:54:19.302535",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-13T19:54:19.358305",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-13T21:28:10.370937",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    }
+  ]
+}
