@@ -571,8 +571,8 @@
       },
       "prompt_hash": "91c3b23bcb60129546c29859f76c8a369fb617a3709e17f4a300c4b42edd8d29",
       "full_prompt_hash": "660d4ba032636711a5ccb40f7455ac6f427bf5a4a80b546f15e06b84e4a01915",
-      "status": "pending",
-      "attempts": 14,
+      "status": "done",
+      "attempts": 21,
       "error_history": [
         {
           "attempt": 1,
@@ -643,9 +643,44 @@
           "attempt": 14,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 15,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 16,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 17,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 18,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 19,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 20,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 21,
+          "status": "SUCCESS",
+          "elapsed": 213.68
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-17T15:30:15.517730",
       "request_id": "REQ-0016",
       "attempt_dates": [
         "2026-11-01",
@@ -661,7 +696,14 @@
         "2026-11-12",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-13"
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-15",
+        "2026-11-16",
+        "2026-11-16",
+        "2026-11-17"
       ]
     },
     {
@@ -1228,7 +1270,7 @@
       "prompt_hash": "279656a631bf19751ee33fc6a1cc686e9b99c682369929d97c629d7c7881233e",
       "full_prompt_hash": "4cca0e479f1ce3cea625342d218e229d048f6c64ecf931587d587602dc2133a8",
       "status": "pending",
-      "attempts": 12,
+      "attempts": 20,
       "error_history": [
         {
           "attempt": 1,
@@ -1289,6 +1331,46 @@
           "attempt": 12,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 13,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 14,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 15,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 16,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 17,
+          "status": "ERROR",
+          "error": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+        },
+        {
+          "attempt": 18,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 19,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 20,
+          "status": "ERROR",
+          "error": "The read operation timed out"
         }
       ],
       "completed_at": null,
@@ -1305,7 +1387,15 @@
         "2026-11-12",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-13"
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-15",
+        "2026-11-16",
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-17"
       ]
     },
     {
@@ -1705,7 +1795,7 @@
       "prompt_hash": "a29226241226ad79e55144f8c664a801748b58c8a21c7e46ab32929c33104312",
       "full_prompt_hash": "bf897220551e18adc3bc78af0bf1dd8ec3b040ac51f3efa8ab3e52b2c14e6c0a",
       "status": "pending",
-      "attempts": 8,
+      "attempts": 14,
       "error_history": [
         {
           "attempt": 1,
@@ -1746,6 +1836,36 @@
           "attempt": 8,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 9,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 10,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 11,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 12,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 13,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 14,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
         }
       ],
       "completed_at": null,
@@ -1758,7 +1878,13 @@
         "2026-11-12",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-13"
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-15",
+        "2026-11-17",
+        "2026-11-17"
       ]
     },
     {
@@ -1845,7 +1971,7 @@
       "prompt_hash": "cb9f7db25763b6a83a830f1bd18390f52d364b040e8ed872e9e73fd74cf7cb18",
       "full_prompt_hash": "61707493402f64fff467c0a4de1814ed43a1c5ce159fd2072104302dde12e908",
       "status": "pending",
-      "attempts": 2,
+      "attempts": 8,
       "error_history": [
         {
           "attempt": 1,
@@ -1856,13 +1982,49 @@
           "attempt": 2,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 5,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 6,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 7,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 8,
+          "status": "ERROR",
+          "error": "The read operation timed out"
         }
       ],
       "completed_at": null,
       "request_id": "REQ-0053",
       "attempt_dates": [
         "2026-11-04",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-13",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-15"
       ]
     },
     {
@@ -1902,8 +2064,8 @@
       },
       "prompt_hash": "66524d9298aa8750ad9b730ee3dde89862001f9c44f6526eeebeb6f8d8e774b0",
       "full_prompt_hash": "a4062866ae738ed23e8b7e01e8894e75a1af937ff7ad3e10e8f1ad9d672fad4a",
-      "status": "pending",
-      "attempts": 2,
+      "status": "done",
+      "attempts": 5,
       "error_history": [
         {
           "attempt": 1,
@@ -1914,13 +2076,31 @@
           "attempt": 2,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 5,
+          "status": "SUCCESS",
+          "elapsed": 221.06
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-15T21:00:53.113660",
       "request_id": "REQ-0055",
       "attempt_dates": [
         "2026-11-04",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-13",
+        "2026-11-13",
+        "2026-11-15"
       ]
     },
     {
@@ -2052,8 +2232,8 @@
       },
       "prompt_hash": "d4be89740fa95b6fb578d5ec674624f9c61d2d5526f149122ad76b92c9244a3d",
       "full_prompt_hash": "ba9f80ddf124e4bc1ece3bea0cf056a290c737a7462f222c04ab9426af63d879",
-      "status": "pending",
-      "attempts": 2,
+      "status": "done",
+      "attempts": 5,
       "error_history": [
         {
           "attempt": 1,
@@ -2064,13 +2244,31 @@
           "attempt": 2,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 5,
+          "status": "SUCCESS",
+          "elapsed": 240.86
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-15T21:34:36.029043",
       "request_id": "REQ-0061",
       "attempt_dates": [
         "2026-11-04",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-13",
+        "2026-11-13",
+        "2026-11-15"
       ]
     },
     {
@@ -2087,8 +2285,8 @@
       },
       "prompt_hash": "661fabf14c0b65924662378bf63d366f74c8b38607f8cd6c8f0a6c1752cbd150",
       "full_prompt_hash": "4287aed8204c5e6af12e33bc1a4904029f2e4709d793bf7ed1df15c1c8c8da17",
-      "status": "pending",
-      "attempts": 2,
+      "status": "done",
+      "attempts": 3,
       "error_history": [
         {
           "attempt": 1,
@@ -2099,13 +2297,19 @@
           "attempt": 2,
           "status": "429_EXHAUSTED",
           "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 22h9m38.45157323s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79778s'}]}}"
+        },
+        {
+          "attempt": 3,
+          "status": "SUCCESS",
+          "elapsed": 161.56
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-15T22:08:37.498644",
       "request_id": "REQ-0062",
       "attempt_dates": [
         "2026-11-04",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-15"
       ]
     },
     {
@@ -2192,10 +2396,25 @@
       "prompt_hash": "b5edbf915da6bd53415e53ce5446040faa163822d7a63b97709066f9dd5cb837",
       "full_prompt_hash": "e042e67b4dae8138c2c011cdf8ceebdd4abfb7f2eb95996c831b31dc960a513b",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 2,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0066"
+      "request_id": "REQ-0066",
+      "attempt_dates": [
+        "2026-11-15",
+        "2026-11-15"
+      ]
     },
     {
       "item_id": "early_0",
@@ -18024,11 +18243,20 @@
       },
       "prompt_hash": "a29226241226ad79e55144f8c664a801748b58c8a21c7e46ab32929c33104312",
       "full_prompt_hash": "bf897220551e18adc3bc78af0bf1dd8ec3b040ac51f3efa8ab3e52b2c14e6c0a",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0673"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 10.96
+        }
+      ],
+      "completed_at": "2026-11-14T17:00:40.584707",
+      "request_id": "REQ-0673",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "late_2",
@@ -18104,11 +18332,20 @@
       },
       "prompt_hash": "7de0d28ba0609f654fc3e6e129005158c0a7982d0efb2577793d621729f99505",
       "full_prompt_hash": "3d26a540762efa2bc990d8a6e339ddc08c5e6fa0ebe69193896232d7835ecddb",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0677"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.23
+        }
+      ],
+      "completed_at": "2026-11-14T17:01:04.721127",
+      "request_id": "REQ-0677",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_43",
@@ -18144,11 +18381,20 @@
       },
       "prompt_hash": "6a58c91b3616dd649097867d2ad93ece33dda70c6f8d3a798fd51f23a125ee51",
       "full_prompt_hash": "c59fa02b61d2fa0873de9d187f074a37ccb44cd0241bd030ade2c056938460d3",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0679"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 105.78
+        }
+      ],
+      "completed_at": "2026-11-14T17:01:19.075467",
+      "request_id": "REQ-0679",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_5",
@@ -18271,19 +18517,25 @@
       },
       "prompt_hash": "f9becac60a0171ec7119eb45a4389dd59bdc2db1e5ca5fd170c7d00667f1e218",
       "full_prompt_hash": "ff983a08f15f415aef4568db72e67dedc08881c27636ffe2219dfdf641c581d7",
-      "status": "pending",
-      "attempts": 1,
+      "status": "done",
+      "attempts": 2,
       "error_history": [
         {
           "attempt": 1,
           "status": "429_EXHAUSTED",
           "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 22h12m34.871995854s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '79954s'}]}}"
+        },
+        {
+          "attempt": 2,
+          "status": "SUCCESS",
+          "elapsed": 1.26
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-14T17:03:18.028839",
       "request_id": "REQ-0684",
       "attempt_dates": [
-        "2026-11-13"
+        "2026-11-13",
+        "2026-11-14"
       ]
     },
     {
@@ -18300,11 +18552,20 @@
       },
       "prompt_hash": "340de9f69da3408e799bf041ac5dd2bea352c67455b574be8cc79e10d4d1fae2",
       "full_prompt_hash": "9717fc15f257f115235fc89b31c597e8a17cc40541c44bc5796edd413d29aa82",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0685"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.99
+        }
+      ],
+      "completed_at": "2026-11-14T17:03:23.911506",
+      "request_id": "REQ-0685",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_23",
@@ -18320,11 +18581,20 @@
       },
       "prompt_hash": "f7bd66c9df51a52e241803a947266f1b15c5205e7f6eafca62d42ad686c6536a",
       "full_prompt_hash": "e6305254213c862e2ca80b22ceb00f70a7a35fd79511c56cdeb42be4816d16e6",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0686"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 3.74
+        }
+      ],
+      "completed_at": "2026-11-14T17:03:38.064879",
+      "request_id": "REQ-0686",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "late_30",
@@ -18340,11 +18610,20 @@
       },
       "prompt_hash": "a96218337579adaf7ed659b404e60122224dee1063d6af2018bb922329b22c21",
       "full_prompt_hash": "f1f7f7467d3c6479131af58f9c79a69dbca40312a6d732ed85d209687a60743e",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0687"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 15.21
+        }
+      ],
+      "completed_at": "2026-11-14T17:03:54.923086",
+      "request_id": "REQ-0687",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_44",
@@ -18360,11 +18639,20 @@
       },
       "prompt_hash": "e9fa1a385895b9ceabe412ed2a42e288b09657d69f6da761453a6363ae71a3dd",
       "full_prompt_hash": "141d4f25c6b288e14e8c69fc905ae8aca4c6242477bd0671de142d1980540b86",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0688"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 7.87
+        }
+      ],
+      "completed_at": "2026-11-14T17:04:23.277770",
+      "request_id": "REQ-0688",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "late_26",
@@ -18380,11 +18668,20 @@
       },
       "prompt_hash": "789dbcdb9cdeb0f4087907411f65613194c130465550690ab9ddc45e59987d00",
       "full_prompt_hash": "f7955017287900d0c35f8d93537f21c9a7c2f7f7581276f3e875c435abe38245",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0689"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 9.34
+        }
+      ],
+      "completed_at": "2026-11-14T17:04:44.269415",
+      "request_id": "REQ-0689",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_8",
@@ -18400,11 +18697,20 @@
       },
       "prompt_hash": "f1896caa7d51d2e563b3a0e05cda1cfb222a43455c4cc08e14da6ba36a6a89e3",
       "full_prompt_hash": "1a0df30c79eebdde72e5bf257d41e22c377cfc467388658e013cc1f3f5ef0bcb",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0690"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.35
+        }
+      ],
+      "completed_at": "2026-11-14T17:05:06.763106",
+      "request_id": "REQ-0690",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_33",
@@ -18480,11 +18786,20 @@
       },
       "prompt_hash": "126c086926e49d40c605f1543258c4ce175ef1c73ec886469fbeac91561260f5",
       "full_prompt_hash": "440ccd5f96bd519827886f874e48af8cd594022a705e22ca3437d9c301862d98",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0694"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 20.52
+        }
+      ],
+      "completed_at": "2026-11-14T17:05:21.263432",
+      "request_id": "REQ-0694",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_26",
@@ -18520,11 +18835,20 @@
       },
       "prompt_hash": "59485397d529ee1593022b75ac81f3a1002c5b513da55ed231dfe216d9b02642",
       "full_prompt_hash": "310e392386015b3e1ec28371ab93d699e2ba619304b406ffd60b426fabec3a9e",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0696"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 7.71
+        }
+      ],
+      "completed_at": "2026-11-14T17:05:54.933517",
+      "request_id": "REQ-0696",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_46",
@@ -18560,11 +18884,20 @@
       },
       "prompt_hash": "e9fa1a385895b9ceabe412ed2a42e288b09657d69f6da761453a6363ae71a3dd",
       "full_prompt_hash": "141d4f25c6b288e14e8c69fc905ae8aca4c6242477bd0671de142d1980540b86",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0698"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 10.76
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:07.286506",
+      "request_id": "REQ-0698",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_23",
@@ -18600,11 +18933,20 @@
       },
       "prompt_hash": "b4cd8a404871a84da93b21e4702d8ee83ca199822ce0c488d9c400f5771fc2b3",
       "full_prompt_hash": "014b9933b3c3cd14aebbeb21c46c752084fad91b1f2063fd95b23f59c52b7074",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0700"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.95
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:22.661717",
+      "request_id": "REQ-0700",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_13",
@@ -18620,11 +18962,20 @@
       },
       "prompt_hash": "b4cd8a404871a84da93b21e4702d8ee83ca199822ce0c488d9c400f5771fc2b3",
       "full_prompt_hash": "014b9933b3c3cd14aebbeb21c46c752084fad91b1f2063fd95b23f59c52b7074",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0701"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.11
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:28.244126",
+      "request_id": "REQ-0701",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "late_27",
@@ -18640,11 +18991,20 @@
       },
       "prompt_hash": "f8c90d9bd73661eeb5b7aa96d8c71925f157034d9eaf40448d63e52f2755bb55",
       "full_prompt_hash": "8a688004d69bc21c47b86132c2f1d2efb20d71c35dd1fbf0d0bd683fa5904fe6",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0702"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.9
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:42.474103",
+      "request_id": "REQ-0702",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_23",
@@ -18700,11 +19060,20 @@
       },
       "prompt_hash": "3ee0c86cf044460e4438cfe91305b1a8d2f70b7ac149289f4b72896e4ecf4b23",
       "full_prompt_hash": "3014d017192f20dde1818d7f5547b2abbb9c66b6caac14c367b3d42cdd16e46e",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0705"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.75
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:48.008895",
+      "request_id": "REQ-0705",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_6",
@@ -18720,11 +19089,20 @@
       },
       "prompt_hash": "6ec4f0865016fda4f5bc15597bd66deb543203e9457a28d8cc4fe57230c8743c",
       "full_prompt_hash": "a3b57ec66229a423ff36314e4cd1f8120733e295b58091f2df22f906923ec453",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0706"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.21
+        }
+      ],
+      "completed_at": "2026-11-14T17:06:53.372483",
+      "request_id": "REQ-0706",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_25",
@@ -18740,11 +19118,20 @@
       },
       "prompt_hash": "f989dedd3b7a5e27c8d66e366ddbe73e1de8f85c0be4dbc03bba14cf07165908",
       "full_prompt_hash": "981c66737a02aa4a415e5adb027b18e53b46918f54687ec9af4e55f3ddaa5854",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0707"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.93
+        }
+      ],
+      "completed_at": "2026-11-14T17:07:07.705125",
+      "request_id": "REQ-0707",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_31",
@@ -18780,11 +19167,20 @@
       },
       "prompt_hash": "7b6e95d5e895c3fbb6dd838de0b4c9252de90a316201fa29dc0c00c76daf54f0",
       "full_prompt_hash": "b63dae50aba42add03b6e445f8b1f2eaf4756cd70ce0af3c33f4c1c3924fed4c",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0709"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.13
+        }
+      ],
+      "completed_at": "2026-11-14T17:07:21.759059",
+      "request_id": "REQ-0709",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_48",
@@ -18840,11 +19236,20 @@
       },
       "prompt_hash": "126c086926e49d40c605f1543258c4ce175ef1c73ec886469fbeac91561260f5",
       "full_prompt_hash": "440ccd5f96bd519827886f874e48af8cd594022a705e22ca3437d9c301862d98",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0712"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 3.38
+        }
+      ],
+      "completed_at": "2026-11-14T17:07:27.511688",
+      "request_id": "REQ-0712",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "early_28",
@@ -18860,11 +19265,20 @@
       },
       "prompt_hash": "8d09e79b3efc384c76089597512ae1c12899712e19d99b927edc7f5e5bece167",
       "full_prompt_hash": "825075ec50b72420db888b8f130268040e7ca79c13b30b694d688b5143c0eef0",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0713"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 1.0
+        }
+      ],
+      "completed_at": "2026-11-14T17:07:35.576118",
+      "request_id": "REQ-0713",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     },
     {
       "item_id": "mid_32",
@@ -18880,11 +19294,20 @@
       },
       "prompt_hash": "cb9f7db25763b6a83a830f1bd18390f52d364b040e8ed872e9e73fd74cf7cb18",
       "full_prompt_hash": "61707493402f64fff467c0a4de1814ed43a1c5ce159fd2072104302dde12e908",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0714"
+      "status": "done",
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "SUCCESS",
+          "elapsed": 0.8
+        }
+      ],
+      "completed_at": "2026-11-14T17:07:41.206089",
+      "request_id": "REQ-0714",
+      "attempt_dates": [
+        "2026-11-14"
+      ]
     }
   ]
 }
