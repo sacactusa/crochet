@@ -79,13 +79,13 @@ RPD_LIMITS = {
     "gemini-3.8-flash": 20
 }
 
-# Process lock, stage timeouts, and pacing (Option A - 4 Nov 2026)
+# Process lock, stage timeouts, and pacing (Option A - 4 Nov 2026 / Updated 19 Nov 2026)
 LOCK_FILE = "data/runner.lock"
 MAX_RUNTIME_25 = 2 * 3600    # Stage 2.5: max 2 hours (7,200s)
 MAX_RUNTIME_38 = 12 * 3600   # Stage 3.8: max 12 hours (43,200s)
 
 # Pacing & Circuit Breaker parameters for Gemini 3.8 Flash
-PACING_DELAY_38 = 1800.0       # ~30 minutes between attempts (avoid burst)
+PACING_DELAY_38 = 900.0        # 15 minutes (900.0s) between attempts (updated 19 Nov 2026)
 CIRCUIT_BREAKER_WAIT = 3600.0  # 60 minutes cooldown after 2 consecutive 503s
 
 # Pacing delays per model
@@ -398,6 +398,15 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
         print(f"[{family}] No pending items for Family {family}. All completed or failed.", flush=True)
         return
 
+    # Item 3.8 reordering policy (Researcher Decision 19 Nov 2026):
+    # Items tried on 2 or more distinct Pacific days are moved to the back of the queue;
+    # fresh items (< 2 distinct days) stay in front preserving original seed=42 order.
+    if family == "3.8":
+        fresh_items = [e for e in pending_items if len(set(e.get("attempt_dates", []))) < 2]
+        multi_day_items = [e for e in pending_items if len(set(e.get("attempt_dates", []))) >= 2]
+        pending_items = fresh_items + multi_day_items
+        print(f"[{family}] Reordered queue: {len(fresh_items)} fresh (<2 days) items in front, {len(multi_day_items)} multi-day (>=2 days) items at back.", flush=True)
+
     print(f"[{family}] Found {len(pending_items)} pending items.", flush=True)
     if dry_run:
         print(f"[{family}] DRY-RUN enabled. Simulating first 3 items:")
@@ -421,6 +430,19 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
         processed_per_model[m] = done_today
     exhausted_models = set()
     consecutive_503_count = 0
+
+    def check_runtime_and_sleep(seconds_to_sleep, sleep_name="sleep"):
+        elapsed = time.time() - batch_start_time
+        remaining = stage_limit - elapsed
+        if remaining <= 0:
+            print(f"\n{'!'*70}\n[{family}] Wall-clock stage runtime limit of {stage_limit/3600:.1f}h reached before {sleep_name} ({elapsed/3600:.2f}h elapsed). Halting.\n{'!'*70}\n", flush=True)
+            return False
+        actual_sleep = min(seconds_to_sleep, remaining)
+        time.sleep(actual_sleep)
+        if (time.time() - batch_start_time) >= stage_limit:
+            print(f"\n{'!'*70}\n[{family}] Wall-clock stage runtime limit of {stage_limit/3600:.1f}h reached after {sleep_name}. Halting.\n{'!'*70}\n", flush=True)
+            return False
+        return True
 
     for item in pending_items:
         # Check stage-specific runtime limit
@@ -585,6 +607,7 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
                 item["completed_at"] = timestamp
                 item.setdefault("error_history", []).append({"attempt": item["attempts"], "status": "SUCCESS", "elapsed": round(elapsed, 2)})
                 processed_per_model[model_id] = processed_per_model.get(model_id, 0) + 1
+                consecutive_503_count = 0  # Reset on any success
                 print(f"[{family}] {req_id} SUCCESS in {elapsed:.2f}s | thinking={thoughts} | finish={finish}", flush=True)
 
             except Exception as e:
@@ -595,11 +618,13 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
 
                 # Check if 429 RESOURCE_EXHAUSTED
                 if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
+                    consecutive_503_count = 0  # Reset on 429
                     is_minute_rate_limit = ("GenerateRequestsPerMinute" in err_str) or ("limit: 5" in err_str)
                     if is_minute_rate_limit:
                         print(f"[{family}] 429 RPM Rate limit encountered for {model_id}. Waiting 60s for RPM window reset...", flush=True)
                         record_quota_event(family, model_id, req_id, "QUOTA_RPM_429", 429, err_str)
-                        time.sleep(60)
+                        if not check_runtime_and_sleep(60, "RPM wait"):
+                            break
                         continue
                     else:
                         print(f"\n{'!'*60}")
@@ -631,8 +656,13 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
                             print(f"[{family}] Cooling down for {int(cb_wait // 60)} minutes ({cb_wait}s) before next attempt to allow server demand to subside...")
                             print(f"{'='*70}\n", flush=True)
                             record_quota_event(family, model_id, req_id, "CIRCUIT_BREAKER_503", 503, f"Circuit breaker: 2 consecutive 503s. Waiting {cb_wait}s.")
-                            time.sleep(cb_wait)
                             consecutive_503_count = 0
+                            if not check_runtime_and_sleep(cb_wait, "Circuit Breaker cooldown"):
+                                save_queue(queue_data)
+                                break
+                    else:
+                        # Reset counter on any non-503 outcome (e.g. 504, timeout, connection drop)
+                        consecutive_503_count = 0
 
                 if attempts_today < max_attempts_today:
                     if family == "3.8":
@@ -641,7 +671,9 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
                     else:
                         backoff = [10, 30, 60][attempts_today - 1]
                         print(f"[{family}] Waiting {backoff}s before retry...", flush=True)
-                    time.sleep(backoff)
+                    if not check_runtime_and_sleep(backoff, "retry backoff"):
+                        save_queue(queue_data)
+                        break
 
         # After attempts today exhausted without success
         if not success:
@@ -663,31 +695,38 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
                     item["status"] = "pending"
                     print(f"[{family}] {req_id} Gagal hari ini ({distinct_days} hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.", flush=True)
                 else:
-                    # Marked as failed (missing data)
-                    item["status"] = "failed"
-                    item["completed_at"] = datetime.now().isoformat()
-                    print(f"[{family}] {req_id} FAILED after {distinct_days} distinct days. Marked as 'failed' (data hilang).", flush=True)
-                    raw_record = {
-                        "request_id": req_id,
-                        "item_id": item_id,
-                        "condition": cond,
-                        "family": family,
-                        "model_id": model_id,
-                        "key_alias": item["key_alias"],
-                        "prompt_hash": item["prompt_hash"],
-                        "full_prompt_hash": item["full_prompt_hash"],
-                        "status": "failed",
-                        "raw_response_text": None,
-                        "thoughts_token_count": None,
-                        "prompt_token_count": None,
-                        "candidates_token_count": None,
-                        "finish_reason": "FAILED",
-                        "elapsed_seconds": round(elapsed, 2),
-                        "attempts": item["attempts"],
-                        "error": error_msg,
-                        "timestamp": datetime.now().isoformat()
-                    }
-                    append_raw_log(raw_record)
+                    # Kebijakan Retry Seragam 2.5 per Keputusan Peneliti 19 Nov 2026:
+                    # Maksimal 3 percobaan tambahan per item pada hari Pasifik berbeda (total 4 hari Pasifik).
+                    # Jika distinct_days < 4, status tetap "pending".
+                    # Jika distinct_days >= 4 dan tetap gagal, statusnya final "failed".
+                    if distinct_days < 4:
+                        item["status"] = "pending"
+                        print(f"[{family}] {req_id} Gagal hari ini ({distinct_days}/4 hari Pasifik berbeda). Status tetap PENDING per kebijakan retry seragam.", flush=True)
+                    else:
+                        item["status"] = "failed"
+                        item["completed_at"] = datetime.now().isoformat()
+                        print(f"[{family}] {req_id} FINAL FAILED setelah {distinct_days} hari Pasifik berbeda. Ditandai 'failed' (data hilang).", flush=True)
+                        raw_record = {
+                            "request_id": req_id,
+                            "item_id": item_id,
+                            "condition": cond,
+                            "family": family,
+                            "model_id": model_id,
+                            "key_alias": item["key_alias"],
+                            "prompt_hash": item["prompt_hash"],
+                            "full_prompt_hash": item["full_prompt_hash"],
+                            "status": "failed",
+                            "raw_response_text": None,
+                            "thoughts_token_count": None,
+                            "prompt_token_count": None,
+                            "candidates_token_count": None,
+                            "finish_reason": "FAILED",
+                            "elapsed_seconds": round(elapsed, 2),
+                            "attempts": item["attempts"],
+                            "error": error_msg,
+                            "timestamp": datetime.now().isoformat()
+                        }
+                        append_raw_log(raw_record)
                 processed_per_model[model_id] = processed_per_model.get(model_id, 0) + 1
 
         save_queue(queue_data)
@@ -696,7 +735,8 @@ def run_worker_for_family(family, max_requests=20, dry_run=False, pacing_delay=N
                 print(f"[{family}] Inter-request pacing: waiting {int(delay_sec // 60)}m ({delay_sec}s) before next item...", flush=True)
             else:
                 print(f"[{family}] Pacing delay: waiting {delay_sec}s before next request...", flush=True)
-            time.sleep(delay_sec)
+            if not check_runtime_and_sleep(delay_sec, "inter-request pacing"):
+                break
 
     print(f"[{family}] Worker completed. Processed {sum(processed_per_model.values())} items.", flush=True)
 

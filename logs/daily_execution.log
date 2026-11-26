@@ -2404,3 +2404,750 @@ Direct use of automatic function calling (AFC) in Models.generate_content_stream
 
 [3.8] REQ-0049 Gagal hari ini (7 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
 [3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+[3.8] Executing REQ-0053 (mid_32 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0053 Attempt 1/2 FAILED in 2.80s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0053 Attempt 2/2 FAILED in 1.51s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0053 Gagal hari ini (5 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+[3.8] Executing REQ-0066 (mid_0 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0066 Attempt 1/2 FAILED in 70.62s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0066 SUCCESS in 99.57s | thinking=None | finish=FinishReason.STOP
+[3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+[3.8] Executing REQ-0073 (late_8 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0073 Attempt 1/2 FAILED in 7.43s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0073 Attempt 2/2 FAILED in 2.13s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0073 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Maximum stage runtime limit of 12.0 hours exceeded (18.61h elapsed).
+[3.8] Stopping stage 3.8 gracefully. Remaining items remain PENDING.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] Worker completed. Processed 6 items.
+[POWER] Windows sleep prevention restored to normal (ES_CONTINUOUS).
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 491 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 491, 'failed': 6, 'pending': 217}
+
+============================================================================================
+ CROCHETBENCH-DSTEP LLM TRANSLATION PIPELINE — STATUS DASHBOARD
+============================================================================================
+Condition  | Model                  | Done  | Pend  | Fail  | Total | Prog    | 429s  | 503/504
+--------------------------------------------------------------------------------------------
+L25L-OFF   | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 5     | 3      
+L25L-ON    | gemini-2.5-flash-lite  | 116   | 0     | 3     | 119   | 97.5%   | 1     | 19     
+L25F-OFF   | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 4     | 3      
+L25F-ON    | gemini-2.5-flash       | 117   | 0     | 2     | 119   | 98.3%   | 2     | 10     
+L38F-LOW   | gemini-3.8-flash       | 13    | 106   | 0     | 119   | 10.9%   | 1     | 35     
+L38F-HIGH  | gemini-3.8-flash       | 7     | 111   | 1     | 119   | 5.9%    | 1     | 98     
+--------------------------------------------------------------------------------------------
+gemini-2.5-flash-lite : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (17/hr): 0  hari
+gemini-2.5-flash      : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (13/hr): 0  hari
+gemini-3.8-flash      : Pending=217 | Laju Nyata Sejak 1 Nov: 1.18 resp/hari (20 sukses dlm 17 hari, termasuk hari=0)
+--------------------------------------------------------------------------------------------
+TOTAL DATA KUMULATIF  : Done=491/714 (68.8%) | Pending=217 | Failed=6
+--------------------------------------------------------------------------------------------
+ GEMINI 3.8 FLASH MISSING DATA REPORT (LOW vs HIGH)
+--------------------------------------------------------------------------------------------
+  Level LOW  (L38F-LOW): Done=13/119 | Pending=106 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 71.4% (35 galat / 49 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=5, fail=0) | Late(done=4, fail=0)
+  Level HIGH (L38F-HIGH): Done=7/119 | Pending=111 | Failed=1 (12.5% missing)
+    - Tingkat Galat per Percobaan: 91.6% (98 galat / 107 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=2, fail=0) | Late(done=1, fail=1)
+  Quota 3.8 Tracker: Total Recorded Attempts=156 (Success=20, 503/504 Errors=133, 429s=2)
+  Quota Reduction Evidence: Terbukti empiris (4 Nov) bahwa 21 panggilan galat 503 berturut-turut memotong habis kuota harian Free Tier (20 RPD) hingga memicu 429.
+  Catatan 503: Galat 503 UNAVAILABLE yang kembali dalam 7-8 detik merupakan penolakan kapasitas kluster server Google, TIDAK berkaitan dengan level reasoning model.
+============================================================================================
+
+[18/11/2026 10:07:09,33] Daily experiment run finished. 
+[18/11/2026 15:30:01,72] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 491 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 491, 'failed': 6, 'pending': 217}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-18 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-18 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Found 217 pending items.
+
+[3.8] Executing REQ-0034 (early_41 | L38F-HIGH | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0034 Attempt 1/2 FAILED in 37.77s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[19/11/2026 17:37:53,40] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 491 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 491, 'failed': 6, 'pending': 217}
+[LOCK] Removing stale lock file from inactive PID 22584.
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-19 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-19 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Found 217 pending items.
+
+[3.8] Executing REQ-0034 (early_41 | L38F-HIGH | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0034 Attempt 1/2 FAILED in 601.04s: The read operation timed out...
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0034 Attempt 2/2 FAILED in 2.04s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0034 Gagal hari ini (11 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+[3.8] Executing REQ-0049 (early_24 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0049 Attempt 1/2 FAILED in 2.04s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0049 Attempt 2/2 FAILED in 6.35s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0049 Gagal hari ini (8 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 30m (1800.0s) before next item...
+
+[3.8] Executing REQ-0053 (mid_32 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0053 Attempt 1/2 FAILED in 600.69s: The read operation timed out...
+[3.8] Pacing retry: waiting 30m (1800.0s) before retry attempt 2...
+[3.8] REQ-0053 Attempt 2/2 FAILED in 9.21s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[20/11/2026 19:17:56,39] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 495 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 495, 'pending': 219}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-20 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] Found 1 pending items.
+
+[2.5] Executing REQ-0336 (mid_25 | L25L-ON | gemini-2.5-flash-lite)...
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+[2.5] REQ-0336 SUCCESS in 7.90s | thinking=2273 | finish=FinishReason.STOP
+[2.5] Pacing delay: waiting 4.5s before next request...
+[2.5] Worker completed. Processed 1 items.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-20 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 214 fresh (<2 days) items in front, 4 multi-day (>=2 days) items at back.
+[3.8] Found 218 pending items.
+
+[3.8] Executing REQ-0073 (late_8 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0073 Attempt 1/2 FAILED in 2.62s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0073 Attempt 2/2 FAILED in 47.01s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0073 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0081 (early_31 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0081 Attempt 1/2 FAILED in 600.73s: The read operation timed out...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0081 Attempt 2/2 FAILED in 3.17s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0081 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0082 (early_44 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0082 Attempt 1/2 FAILED in 1.24s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0082 Attempt 2/2 FAILED in 1.73s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0082 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0084 (early_39 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0084 Attempt 1/2 FAILED in 10.34s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached after Circuit Breaker cooldown. Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] REQ-0084 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached before inter-request pacing (13.47h elapsed). Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] Worker completed. Processed 4 items.
+[POWER] Windows sleep prevention restored to normal (ES_CONTINUOUS).
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+
+============================================================================================
+ CROCHETBENCH-DSTEP LLM TRANSLATION PIPELINE — STATUS DASHBOARD
+============================================================================================
+Condition  | Model                  | Done  | Pend  | Fail  | Total | Prog    | 429s  | 503/504
+--------------------------------------------------------------------------------------------
+L25L-OFF   | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 5     | 3      
+L25L-ON    | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 1     | 23     
+L25F-OFF   | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 4     | 3      
+L25F-ON    | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 2     | 10     
+L38F-LOW   | gemini-3.8-flash       | 13    | 106   | 0     | 119   | 10.9%   | 1     | 40     
+L38F-HIGH  | gemini-3.8-flash       | 7     | 112   | 0     | 119   | 5.9%    | 1     | 112    
+--------------------------------------------------------------------------------------------
+gemini-2.5-flash-lite : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (17/hr): 0  hari
+gemini-2.5-flash      : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (13/hr): 0  hari
+gemini-3.8-flash      : Pending=218 | Laju Nyata Sejak 1 Nov: 1.00 resp/hari (20 sukses dlm 20 hari, termasuk hari=0)
+--------------------------------------------------------------------------------------------
+TOTAL DATA KUMULATIF  : Done=496/714 (69.5%) | Pending=218 | Failed=0
+--------------------------------------------------------------------------------------------
+ GEMINI 3.8 FLASH MISSING DATA REPORT (LOW vs HIGH)
+--------------------------------------------------------------------------------------------
+  Level LOW  (L38F-LOW): Done=13/119 | Pending=106 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 74.1% (40 galat / 54 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=5, fail=0) | Late(done=4, fail=0)
+  Level HIGH (L38F-HIGH): Done=7/119 | Pending=112 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 92.6% (112 galat / 121 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=2, fail=0) | Late(done=1, fail=0)
+  Quota 3.8 Tracker: Total Recorded Attempts=175 (Success=20, 503/504 Errors=152, 429s=2)
+  Quota Reduction Evidence: Terbukti empiris (4 Nov) bahwa 21 panggilan galat 503 berturut-turut memotong habis kuota harian Free Tier (20 RPD) hingga memicu 429.
+  Catatan 503: Galat 503 UNAVAILABLE yang kembali dalam 7-8 detik merupakan penolakan kapasitas kluster server Google, TIDAK berkaitan dengan level reasoning model.
+============================================================================================
+
+[21/11/2026  8:47:17,27] Daily experiment run finished. 
+[21/11/2026 18:32:51,13] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-21 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-21 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 213 fresh (<2 days) items in front, 5 multi-day (>=2 days) items at back.
+[3.8] Found 218 pending items.
+
+[3.8] Executing REQ-0081 (early_31 | L38F-HIGH | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0081 Attempt 1/2 FAILED in 5.47s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0081 Attempt 2/2 FAILED in 4.18s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0081 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0082 (early_44 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0082 Attempt 1/2 FAILED in 83.61s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0082 Attempt 2/2 FAILED in 4.70s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0082 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0084 (early_39 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0084 Attempt 1/2 FAILED in 6.85s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0084 Attempt 2/2 FAILED in 600.82s: The read operation timed out...
+[3.8] REQ-0084 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0085 (early_1 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0085 Attempt 1/2 FAILED in 11.32s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0085 Attempt 2/2 FAILED in 600.88s: The read operation timed out...
+[3.8] REQ-0085 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0093 (late_15 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0093 Attempt 1/2 FAILED in 1.08s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0093 Attempt 2/2 FAILED in 16.85s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0093 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0097 (mid_5 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0097 Attempt 1/2 FAILED in 1.67s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0097 Attempt 2/2 FAILED in 601.08s: The read operation timed out...
+[3.8] REQ-0097 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0098 (mid_16 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0098 Attempt 1/2 FAILED in 2.03s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[22/11/2026 16:38:35,73] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+[LOCK] Removing stale lock file from inactive PID 21412.
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-22 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-22 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 210 fresh (<2 days) items in front, 8 multi-day (>=2 days) items at back.
+[3.8] Found 218 pending items.
+
+[3.8] Executing REQ-0085 (early_1 | L38F-LOW | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0085 Attempt 1/2 FAILED in 0.59s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0085 Attempt 2/2 FAILED in 3.54s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0085 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0093 (late_15 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0093 Attempt 1/2 FAILED in 4.50s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0093 Attempt 2/2 FAILED in 94.71s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0093 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0097 (mid_5 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0097 Attempt 1/2 FAILED in 305.21s: [WinError 10054] An existing connection was forcibly closed by the remote host...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0097 Attempt 2/2 FAILED in 601.00s: The read operation timed out...
+[3.8] REQ-0097 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0098 (mid_16 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0098 Attempt 1/2 FAILED in 600.54s: The read operation timed out...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0098 Attempt 2/2 FAILED in 3.65s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0098 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0100 (early_49 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0100 Attempt 1/2 FAILED in 123.01s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached after Circuit Breaker cooldown. Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] REQ-0100 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached before inter-request pacing (16.25h elapsed). Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] Worker completed. Processed 5 items.
+[POWER] Windows sleep prevention restored to normal (ES_CONTINUOUS).
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+
+============================================================================================
+ CROCHETBENCH-DSTEP LLM TRANSLATION PIPELINE — STATUS DASHBOARD
+============================================================================================
+Condition  | Model                  | Done  | Pend  | Fail  | Total | Prog    | 429s  | 503/504
+--------------------------------------------------------------------------------------------
+L25L-OFF   | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 5     | 3      
+L25L-ON    | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 1     | 23     
+L25F-OFF   | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 4     | 3      
+L25F-ON    | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 2     | 10     
+L38F-LOW   | gemini-3.8-flash       | 13    | 106   | 0     | 119   | 10.9%   | 1     | 49     
+L38F-HIGH  | gemini-3.8-flash       | 7     | 112   | 0     | 119   | 5.9%    | 1     | 131    
+--------------------------------------------------------------------------------------------
+gemini-2.5-flash-lite : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (17/hr): 0  hari
+gemini-2.5-flash      : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (13/hr): 0  hari
+gemini-3.8-flash      : Pending=218 | Laju Nyata Sejak 1 Nov: 0.91 resp/hari (20 sukses dlm 22 hari, termasuk hari=0)
+--------------------------------------------------------------------------------------------
+TOTAL DATA KUMULATIF  : Done=496/714 (69.5%) | Pending=218 | Failed=0
+--------------------------------------------------------------------------------------------
+ GEMINI 3.8 FLASH MISSING DATA REPORT (LOW vs HIGH)
+--------------------------------------------------------------------------------------------
+  Level LOW  (L38F-LOW): Done=13/119 | Pending=106 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 77.8% (49 galat / 63 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=5, fail=0) | Late(done=4, fail=0)
+  Level HIGH (L38F-HIGH): Done=7/119 | Pending=112 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 93.6% (131 galat / 140 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=2, fail=0) | Late(done=1, fail=0)
+  Quota 3.8 Tracker: Total Recorded Attempts=203 (Success=20, 503/504 Errors=180, 429s=2)
+  Quota Reduction Evidence: Terbukti empiris (4 Nov) bahwa 21 panggilan galat 503 berturut-turut memotong habis kuota harian Free Tier (20 RPD) hingga memicu 429.
+  Catatan 503: Galat 503 UNAVAILABLE yang kembali dalam 7-8 detik merupakan penolakan kapasitas kluster server Google, TIDAK berkaitan dengan level reasoning model.
+============================================================================================
+
+[23/11/2026  8:54:08,19] Daily experiment run finished. 
+[23/11/2026 15:45:20,81] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-23 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-23 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 207 fresh (<2 days) items in front, 11 multi-day (>=2 days) items at back.
+[3.8] Found 218 pending items.
+
+[3.8] Executing REQ-0098 (mid_16 | L38F-HIGH | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0098 Attempt 1/2 FAILED in 600.53s: The read operation timed out...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0098 Attempt 2/2 FAILED in 23.48s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0098 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0100 (early_49 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0100 Attempt 1/2 FAILED in 0.13s: [Errno 11001] getaddrinfo failed...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0100 Attempt 2/2 FAILED in 1.71s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0100 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0106 (early_52 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0106 Attempt 1/2 FAILED in 3.74s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0106 Attempt 2/2 FAILED in 59.34s: [Errno 11001] getaddrinfo failed...
+[3.8] REQ-0106 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0110 (mid_29 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0110 Attempt 1/2 FAILED in 29.73s: [WinError 10053] An established connection was aborted by the software in your host machine...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0110 Attempt 2/2 FAILED in 0.04s: [Errno 11001] getaddrinfo failed...
+[3.8] REQ-0110 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached after inter-request pacing. Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] Worker completed. Processed 4 items.
+[POWER] Windows sleep prevention restored to normal (ES_CONTINUOUS).
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+
+============================================================================================
+ CROCHETBENCH-DSTEP LLM TRANSLATION PIPELINE — STATUS DASHBOARD
+============================================================================================
+Condition  | Model                  | Done  | Pend  | Fail  | Total | Prog    | 429s  | 503/504
+--------------------------------------------------------------------------------------------
+L25L-OFF   | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 5     | 3      
+L25L-ON    | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 1     | 23     
+L25F-OFF   | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 4     | 3      
+L25F-ON    | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 2     | 10     
+L38F-LOW   | gemini-3.8-flash       | 13    | 106   | 0     | 119   | 10.9%   | 1     | 54     
+L38F-HIGH  | gemini-3.8-flash       | 7     | 112   | 0     | 119   | 5.9%    | 1     | 135    
+--------------------------------------------------------------------------------------------
+gemini-2.5-flash-lite : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (17/hr): 0  hari
+gemini-2.5-flash      : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (13/hr): 0  hari
+gemini-3.8-flash      : Pending=218 | Laju Nyata Sejak 1 Nov: 0.87 resp/hari (20 sukses dlm 23 hari, termasuk hari=0)
+--------------------------------------------------------------------------------------------
+TOTAL DATA KUMULATIF  : Done=496/714 (69.5%) | Pending=218 | Failed=0
+--------------------------------------------------------------------------------------------
+ GEMINI 3.8 FLASH MISSING DATA REPORT (LOW vs HIGH)
+--------------------------------------------------------------------------------------------
+  Level LOW  (L38F-LOW): Done=13/119 | Pending=106 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 79.4% (54 galat / 68 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=5, fail=0) | Late(done=4, fail=0)
+  Level HIGH (L38F-HIGH): Done=7/119 | Pending=112 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 93.8% (135 galat / 144 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=2, fail=0) | Late(done=1, fail=0)
+  Quota 3.8 Tracker: Total Recorded Attempts=212 (Success=20, 503/504 Errors=189, 429s=2)
+  Quota Reduction Evidence: Terbukti empiris (4 Nov) bahwa 21 panggilan galat 503 berturut-turut memotong habis kuota harian Free Tier (20 RPD) hingga memicu 429.
+  Catatan 503: Galat 503 UNAVAILABLE yang kembali dalam 7-8 detik merupakan penolakan kapasitas kluster server Google, TIDAK berkaitan dengan level reasoning model.
+============================================================================================
+
+[24/11/2026  7:30:54,76] Daily experiment run finished. 
+[25/11/2026 16:37:23,51] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 496 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 496, 'pending': 218}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-25 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-25 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 205 fresh (<2 days) items in front, 13 multi-day (>=2 days) items at back.
+[3.8] Found 218 pending items.
+
+[3.8] Executing REQ-0106 (early_52 | L38F-LOW | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0106 SUCCESS in 47.34s | thinking=911 | finish=FinishReason.STOP
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0110 (mid_29 | L38F-HIGH | gemini-3.8-flash)...
+[3.8] REQ-0110 Attempt 1/2 FAILED in 1.14s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0110 Attempt 2/2 FAILED in 1.68s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] REQ-0110 Gagal hari ini (2 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0111 (late_9 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0111 Attempt 1/2 FAILED in 0.14s: [Errno 11001] getaddrinfo failed...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0111 Attempt 2/2 FAILED in 62.26s: [WinError 10054] An existing connection was forcibly closed by the remote host...
+[3.8] REQ-0111 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0112 (mid_17 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0112 Attempt 1/2 FAILED in 62.23s: [WinError 10053] An established connection was aborted by the software in your host machine...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0112 Attempt 2/2 FAILED in 0.23s: [Errno 11001] getaddrinfo failed...
+[3.8] REQ-0112 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0113 (early_19 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0113 Attempt 1/2 FAILED in 600.29s: The read operation timed out...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0113 Attempt 2/2 FAILED in 47.34s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0113 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0115 (late_22 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0115 Attempt 1/2 FAILED in 4.08s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0115 Attempt 2/2 FAILED in 6.20s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] REQ-0115 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+[3.8] Executing REQ-0118 (early_5 | L38F-LOW | gemini-3.8-flash)...
+[3.8] REQ-0118 Attempt 1/2 FAILED in 0.73s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached after Circuit Breaker cooldown. Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] REQ-0118 Gagal hari ini (1 hari berbeda Pasifik). Penandaan 'failed' DITANGGUHKAN. Status tetap PENDING.
+[3.8] Inter-request pacing: waiting 15m (900.0s) before next item...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[3.8] Wall-clock stage runtime limit of 12.0h reached before inter-request pacing (14.61h elapsed). Halting.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3.8] Worker completed. Processed 7 items.
+[POWER] Windows sleep prevention restored to normal (ES_CONTINUOUS).
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 497 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 497, 'pending': 217}
+
+============================================================================================
+ CROCHETBENCH-DSTEP LLM TRANSLATION PIPELINE — STATUS DASHBOARD
+============================================================================================
+Condition  | Model                  | Done  | Pend  | Fail  | Total | Prog    | 429s  | 503/504
+--------------------------------------------------------------------------------------------
+L25L-OFF   | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 5     | 3      
+L25L-ON    | gemini-2.5-flash-lite  | 119   | 0     | 0     | 119   | 100.0%  | 1     | 23     
+L25F-OFF   | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 4     | 3      
+L25F-ON    | gemini-2.5-flash       | 119   | 0     | 0     | 119   | 100.0%  | 2     | 10     
+L38F-LOW   | gemini-3.8-flash       | 14    | 105   | 0     | 119   | 11.8%   | 1     | 65     
+L38F-HIGH  | gemini-3.8-flash       | 7     | 112   | 0     | 119   | 5.9%    | 1     | 138    
+--------------------------------------------------------------------------------------------
+gemini-2.5-flash-lite : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (17/hr): 0  hari
+gemini-2.5-flash      : Pending=0   | Hari Teoritis (20/hr): 0  | Hari Nyata (13/hr): 0  hari
+gemini-3.8-flash      : Pending=217 | Laju Nyata Sejak 1 Nov: 0.84 resp/hari (21 sukses dlm 25 hari, termasuk hari=0)
+--------------------------------------------------------------------------------------------
+TOTAL DATA KUMULATIF  : Done=497/714 (69.6%) | Pending=217 | Failed=0
+--------------------------------------------------------------------------------------------
+ GEMINI 3.8 FLASH MISSING DATA REPORT (LOW vs HIGH)
+--------------------------------------------------------------------------------------------
+  Level LOW  (L38F-LOW): Done=14/119 | Pending=105 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 81.2% (65 galat / 80 percobaan)
+    - Step Groups: Early(done=5, fail=0) | Mid(done=5, fail=0) | Late(done=4, fail=0)
+  Level HIGH (L38F-HIGH): Done=7/119 | Pending=112 | Failed=0 (0.0% missing)
+    - Tingkat Galat per Percobaan: 93.9% (138 galat / 147 percobaan)
+    - Step Groups: Early(done=4, fail=0) | Mid(done=2, fail=0) | Late(done=1, fail=0)
+  Quota 3.8 Tracker: Total Recorded Attempts=227 (Success=21, 503/504 Errors=203, 429s=2)
+  Quota Reduction Evidence: Terbukti empiris (4 Nov) bahwa 21 panggilan galat 503 berturut-turut memotong habis kuota harian Free Tier (20 RPD) hingga memicu 429.
+  Catatan 503: Galat 503 UNAVAILABLE yang kembali dalam 7-8 detik merupakan penolakan kapasitas kluster server Google, TIDAK berkaitan dengan level reasoning model.
+============================================================================================
+
+[26/11/2026  7:14:26,57] Daily experiment run finished. 
+[26/11/2026 21:38:02,59] Starting daily scheduled experiment run... 
+Reconciling c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\data\experiment_queue.json with c:\Users\salis\OneDrive\Documents\Materi Kuliah\3,5\sempro\src\..\raw\llm.jsonl...
+Found 497 unique 'done' requests in raw/llm.jsonl.
+Reconciled 0 entries to 'done'.
+Successfully saved reconciled queue.
+Queue status summary: {'done': 497, 'pending': 217}
+[POWER] Windows sleep prevention enabled (ES_CONTINUOUS | ES_SYSTEM_REQUIRED).
+
+==================================================
+>>> STARTING FAMILY 2.5 WORKER (gemini-2.5-flash-lite & gemini-2.5-flash)
+==================================================
+[2.5] Worker started for Family 2.5 on 2026-11-26 (PT calendar date, daily cap=20, max runtime=2.0h)...
+[2.5] No pending items for Family 2.5. All completed or failed.
+
+==================================================
+>>> STARTING FAMILY 3.8 WORKER (gemini-3.8-flash)
+==================================================
+[3.8] Worker started for Family 3.8 on 2026-11-26 (PT calendar date, daily cap=20, max runtime=12.0h)...
+[3.8] Reordered queue: 203 fresh (<2 days) items in front, 14 multi-day (>=2 days) items at back.
+[3.8] Found 217 pending items.
+
+[3.8] Executing REQ-0111 (late_9 | L38F-LOW | gemini-3.8-flash)...
+Direct use of automatic function calling (AFC) in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream. Similarly, direct use of AFC in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message.
+[3.8] REQ-0111 Attempt 1/2 FAILED in 8.73s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+[3.8] Pacing retry: waiting 15m (900.0s) before retry attempt 2...
+[3.8] REQ-0111 Attempt 2/2 FAILED in 6.81s: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand ...
+
+======================================================================
+[3.8] CIRCUIT BREAKER TRIGGERED: 2 consecutive 503 errors encountered.
+[3.8] Cooling down for 60 minutes (3600.0s) before next attempt to allow server demand to subside...
+======================================================================
+

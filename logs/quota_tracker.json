@@ -6020,6 +6020,798 @@
       "event_type": "CIRCUIT_BREAKER_503",
       "status_code": 503,
       "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-17T22:41:41.626994",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0066",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-17T23:13:21.491300",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0066",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-17T23:43:29.484514",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-17T23:43:29.586017",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-18T09:37:08.213648",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-18T15:30:45.631677",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T17:48:36.402725",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-19T18:18:38.515287",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0034",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T18:48:40.756191",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T18:48:40.823073",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-19T20:18:47.296350",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0049",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T20:58:48.269175",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0053",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-19T21:28:54.194931",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0053",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T21:28:54.260349",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0053",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-19T22:02:29.510919",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T22:02:48.294480",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T22:03:37.110318",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T22:03:53.444494",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0341",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-19T22:04:09.177124",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0341",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-19T22:04:24.888267",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0351",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-19T22:04:54.161459",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0512",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-19T22:05:27.335107",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash",
+      "request_id": "REQ-0514",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-20T19:18:42.803612",
+      "family": "2.5",
+      "model_id": "gemini-2.5-flash-lite",
+      "request_id": "REQ-0336",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-20T19:18:53.332142",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T19:34:40.514046",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T19:34:40.580825",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0073",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-20T20:59:41.888183",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0081",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:45.243622",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0081",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T21:29:46.884783",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T21:29:46.974595",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-20T22:44:48.909571",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T22:59:59.611471",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0084",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-20T22:59:59.675851",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0084",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-21T18:33:29.032683",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0081",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T18:48:33.405039",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0081",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T18:48:33.474417",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0081",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-21T20:43:49.874732",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T20:58:56.491553",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T20:58:56.593836",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0082",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-21T22:14:04.084652",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0084",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T22:39:05.084252",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0084",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-21T22:54:16.974310",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0085",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T23:19:18.644084",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0085",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-21T23:34:20.196690",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T23:49:37.247094",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-21T23:49:37.315993",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-22T01:04:40.439326",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0097",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T01:29:41.893751",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0097",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-22T01:44:44.362485",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0098",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T16:39:05.893204",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0085",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T16:54:09.609764",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0085",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T16:54:09.675499",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0085",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-22T18:09:14.569454",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T18:25:49.361530",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T18:25:49.419914",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0093",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-22T19:45:55.064510",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0097",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-22T21:15:57.916756",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0097",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-22T21:40:58.878720",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0098",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-22T21:57:53.201368",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0098",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T22:14:56.497622",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0100",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-22T22:14:56.549695",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0100",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-23T17:28:59.213456",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0098",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-23T17:44:22.820920",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0098",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-23T18:13:20.915730",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0100",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "timestamp": "2026-11-23T20:58:18.372517",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0100",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-23T21:13:22.416028",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0106",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-23T21:13:22.478704",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0106",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-23T22:29:35.159225",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0106",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "timestamp": "2026-11-23T22:45:05.635128",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0110",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10053] An established connection was aborted by the software in your host machine"
+    },
+    {
+      "timestamp": "2026-11-23T23:00:57.991913",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0110",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "timestamp": "2026-11-25T16:38:44.065043",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0106",
+      "event_type": "SUCCESS",
+      "status_code": 200,
+      "message": "Request successful"
+    },
+    {
+      "timestamp": "2026-11-25T16:53:45.366899",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0110",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T17:16:43.656224",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0110",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T17:16:43.723519",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0110",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-25T18:51:03.651328",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0111",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "timestamp": "2026-11-25T19:08:59.372985",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0111",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    {
+      "timestamp": "2026-11-25T19:26:29.574951",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0112",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[WinError 10053] An established connection was aborted by the software in your host machine"
+    },
+    {
+      "timestamp": "2026-11-25T19:41:55.700590",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0112",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "timestamp": "2026-11-25T20:07:22.088456",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0113",
+      "event_type": "SERVER_ERROR",
+      "status_code": 504,
+      "message": "The read operation timed out"
+    },
+    {
+      "timestamp": "2026-11-25T20:23:09.581896",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0113",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T20:38:14.007961",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0115",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T20:38:14.070088",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0115",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-25T21:53:20.471850",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0115",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T22:08:21.513187",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0118",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-25T22:08:21.581002",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0118",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
+    },
+    {
+      "timestamp": "2026-11-26T21:38:33.162959",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0111",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-26T21:53:40.092344",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0111",
+      "event_type": "SERVER_ERROR",
+      "status_code": 503,
+      "message": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "timestamp": "2026-11-26T21:53:40.205374",
+      "family": "3.8",
+      "model_id": "gemini-3.8-flash",
+      "request_id": "REQ-0111",
+      "event_type": "CIRCUIT_BREAKER_503",
+      "status_code": 503,
+      "message": "Circuit breaker: 2 consecutive 503s. Waiting 3600.0s."
     }
   ]
 }

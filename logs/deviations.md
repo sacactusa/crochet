@@ -327,3 +327,37 @@ Dokumen ini mencatat seluruh adaptasi teknis dan operasional yang diterapkan sel
      - Telah disiapkan dan diuji pada lingkungan *mock* rancangan perbaikan agar `consecutive_503_count` secara eksplisit direset ke 0 pada setiap hasil selain 503 (baik sukses 200 maupun galat non-503 seperti timeout klien 504 dan *connection reset*). Perbaikan ini disimpan terisolasi dan menunggu persetujuan eksplisit peneliti sebelum diterapkan ke kode utama `src/run_daily.py`.
 - **Kepatuhan Protokol:** Seluruh parameter model, sampling bawaan, dataset, prompt, urutan antrean (`seed=42`), dan status item failed (`REQ-0336`, `REQ-0341`, `REQ-0351`, `REQ-0512`, `REQ-0514`, `REQ-0003`) tetap 100% terlindungi tanpa modifikasi.
 - **Status:** Terdokumentasi, Teruji secara Mock, & Menunggu Persetujuan.
+
+---
+
+## 20. Keputusan Peneliti 19 November 2026: Kebijakan Retry Seragam 2.5, Pembaruan Runner 3.8, dan Hasil Eksekusi Uji Ulang
+- **Tanggal Diterapkan:** 19 November 2026
+- **Keputusan Peneliti & Ketentuan Protokol:**
+  1. **Aturan Retry Seragam 2.5 (Menggantikan Penandaan Failed Sebelumnya):**
+     - Item keluarga 2.5 yang sebelumnya ditandai `failed` akibat kegagalan infrastruktur jaringan/server (503/504/timeout tanpa respons model) dikembalikan ke status `"pending"`: `REQ-0336`, `REQ-0341`, `REQ-0351`, `REQ-0512`, dan `REQ-0514`.
+     - Seluruh riwayat galat (`error_history`), hitungan percobaan (`attempts`), dan tanggal percobaan (`attempt_dates`) dipertahankan secara utuh tanpa menghapus rekaman historis.
+     - Aturan berlaku seragam untuk semua kondisi 2.5: Maksimal 3 percobaan tambahan per item pada hari Pasifik berbeda (total 4 hari kalender Pasifik berbeda). Jika setelah 4 hari Pasifik berbeda tetap gagal tanpa respons, barulah statusnya final `failed`.
+     - Item yang telah memiliki respons model yang sah (termasuk DSL tidak valid atau terpotong seperti `REQ-0205`) dilarang keras diulang dan tetap berstatus `done`.
+     - Untuk konsistensi dengan kebijakan penangguhan 3.8, item `REQ-0003` (`L38F-HIGH`, `late_26`) turut dikembalikan ke status `"pending"` dengan `error_history` utuh.
+  2. **Penerapan Perbaikan Runner (`src/run_daily.py`):**
+     - Diterapkan secara aman setelah runner PID 5504 dihentikan pada fase idle/sleep:
+       (a) **Reset Penghitung 503:** Variabel `consecutive_503_count` kini direset ke 0 pada hasil apa pun selain 503 (respons sukses 200, galat non-503 seperti timeout 504 / connection reset, dan kuota 429).
+       (b) **Pemisahan Antrean 3.8:** Item 3.8 yang telah dicoba pada 2 hari Pasifik atau lebih dipindahkan ke bagian belakang antrean, sementara item segar (< 2 hari) tetap berada di depan mengikuti urutan beku `seed=42`.
+       (c) **Pacing & Runtime Guard:** Jeda antarpercobaan 3.8 dipercepat dari 30 menit menjadi 15 menit (`PACING_DELAY_38 = 900.0s`), dan guard batas runtime 12 jam berbasis jam dinding (`check_runtime_and_sleep`) dicek sebelum setiap panggilan tidur (`sleep`).
+     - Seluruh perbaikan telah diverifikasi lulus 100% pada uji mock (`scratch/test_flow_mock_v2.py`).
+     - Hash SHA-256 berkas `src/run_daily.py` diperbarui dari `6eba814bc477bed1f3b24c11375530962afa24d8f1089ed89c0384102f5e6322` menjadi `3476c36389fd3cafcab077c126f23f81c317fc89e94194e3cfd2820866ca7b83` dan dicatat di `logs/config_snapshot.json` dengan salinan cadangan di `backups/src_2026-11-19/run_daily.py`.
+  3. **Temuan Audit Sleep/Standby Sistem (Kernel-Power):**
+     - Audit log kejadian Windows System (`Microsoft-Windows-Kernel-Power`, Event ID 42, 107, 506, 507) sejak 12 November mengonfirmasi 97 kejadian tidur/standby yang beririsan dengan jendela runner aktif. Sebagian besar merupakan *Modern Standby* (Event 506/507) akibat *idle timeout* layar, yang membekukan eksekusi proses pengguna saat baterai/laptop tidak aktif.
+  4. **Hasil Eksekusi Ulang Tahap 2.5 (19 November 2026):**
+     - Tahap 2.5 dijalankan secara eksklusif (`--family 2.5`) pada kuota Pasifik 19 November:
+       - `REQ-0336` (`mid_25` | `L25L-ON`): 3x percobaan menghasilkan 503 UNAVAILABLE. Sesuai aturan retry seragam (baru 2 hari Pasifik), status tetap **PENDING**.
+       - `REQ-0341` (`early_53` | `L25L-ON`): Sukses pada percobaan ke-2 (5.65s, thinking=1.365 token, `status=done`).
+       - `REQ-0351` (`early_32` | `L25L-ON`): Sukses pada percobaan ke-1 (11.14s, thinking=3.123 token, `status=done`).
+       - `REQ-0512` (`early_43` | `L25F-ON`): Sukses pada percobaan ke-1 (24.69s, thinking=4.107 token, `status=done`).
+       - `REQ-0514` (`early_53` | `L25F-ON`): Sukses pada percobaan ke-1 (20.08s, thinking=3.479 token, `status=done`).
+     - Dari 5 item pengulangan, **4 item sukses tuntas**. Total Family 2.5 kini mencapai **475 / 476 item selesai (99.8%)**, dengan hanya 1 item pending tersisa (`REQ-0336`) dan 0 failed.
+  5. **Integritas Skrip Analisis & Pelaksanaan Analisis RM1 dan RM2:**
+     - Hash SHA-256 dari skrip normalisasi, kompilasi, dan analisis telah disimpan di `logs/analysis_hashes.json` sebelum dieksekusi.
+     - Analisis statistik RM1 dan RM2 telah berhasil dijalankan untuk kedua versi (Utama dan Sensitivitas) dengan protokol kontekstual murni tanpa menyentuh RM3.
+- **Kepatuhan Protokol:** Seluruh parameter model bawaan (default sampling), timeout (600s), dataset Dstep, prompt resmi, dan urutan antrean dasar (`seed=42`) tetap 100% terlindungi tanpa modifikasi.
+- **Status:** Ditetapkan, Terdokumentasi, Diuji secara Mock, Diterapkan, & Selesai Dievaluasi.

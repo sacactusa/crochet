@@ -113,7 +113,7 @@
       },
       "prompt_hash": "789dbcdb9cdeb0f4087907411f65613194c130465550690ab9ddc45e59987d00",
       "full_prompt_hash": "f7955017287900d0c35f8d93537f21c9a7c2f7f7581276f3e875c435abe38245",
-      "status": "failed",
+      "status": "pending",
       "attempts": 4,
       "error_history": [
         {
@@ -135,9 +135,14 @@
           "attempt": 4,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407781",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
         }
       ],
-      "completed_at": "2026-11-02T21:48:27.043706",
       "request_id": "REQ-0003",
       "attempt_dates": [
         "2026-10-31",
@@ -1270,7 +1275,7 @@
       "prompt_hash": "279656a631bf19751ee33fc6a1cc686e9b99c682369929d97c629d7c7881233e",
       "full_prompt_hash": "4cca0e479f1ce3cea625342d218e229d048f6c64ecf931587d587602dc2133a8",
       "status": "pending",
-      "attempts": 20,
+      "attempts": 22,
       "error_history": [
         {
           "attempt": 1,
@@ -1371,6 +1376,16 @@
           "attempt": 20,
           "status": "ERROR",
           "error": "The read operation timed out"
+        },
+        {
+          "attempt": 21,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 22,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
         }
       ],
       "completed_at": null,
@@ -1395,7 +1410,9 @@
         "2026-11-16",
         "2026-11-16",
         "2026-11-17",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-19"
       ]
     },
     {
@@ -1795,7 +1812,7 @@
       "prompt_hash": "a29226241226ad79e55144f8c664a801748b58c8a21c7e46ab32929c33104312",
       "full_prompt_hash": "bf897220551e18adc3bc78af0bf1dd8ec3b040ac51f3efa8ab3e52b2c14e6c0a",
       "status": "pending",
-      "attempts": 14,
+      "attempts": 16,
       "error_history": [
         {
           "attempt": 1,
@@ -1866,6 +1883,16 @@
           "attempt": 14,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 15,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 16,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
         }
       ],
       "completed_at": null,
@@ -1884,7 +1911,9 @@
         "2026-11-15",
         "2026-11-15",
         "2026-11-17",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-19"
       ]
     },
     {
@@ -1971,7 +2000,7 @@
       "prompt_hash": "cb9f7db25763b6a83a830f1bd18390f52d364b040e8ed872e9e73fd74cf7cb18",
       "full_prompt_hash": "61707493402f64fff467c0a4de1814ed43a1c5ce159fd2072104302dde12e908",
       "status": "pending",
-      "attempts": 8,
+      "attempts": 10,
       "error_history": [
         {
           "attempt": 1,
@@ -2012,6 +2041,16 @@
           "attempt": 8,
           "status": "ERROR",
           "error": "The read operation timed out"
+        },
+        {
+          "attempt": 9,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 10,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
         }
       ],
       "completed_at": null,
@@ -2024,7 +2063,9 @@
         "2026-11-14",
         "2026-11-14",
         "2026-11-15",
-        "2026-11-15"
+        "2026-11-15",
+        "2026-11-17",
+        "2026-11-17"
       ]
     },
     {
@@ -2395,8 +2436,8 @@
       },
       "prompt_hash": "b5edbf915da6bd53415e53ce5446040faa163822d7a63b97709066f9dd5cb837",
       "full_prompt_hash": "e042e67b4dae8138c2c011cdf8ceebdd4abfb7f2eb95996c831b31dc960a513b",
-      "status": "pending",
-      "attempts": 2,
+      "status": "done",
+      "attempts": 4,
       "error_history": [
         {
           "attempt": 1,
@@ -2407,13 +2448,25 @@
           "attempt": 2,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "SUCCESS",
+          "elapsed": 99.57
         }
       ],
-      "completed_at": null,
+      "completed_at": "2026-11-17T23:11:41.787033",
       "request_id": "REQ-0066",
       "attempt_dates": [
         "2026-11-15",
-        "2026-11-15"
+        "2026-11-15",
+        "2026-11-17",
+        "2026-11-17"
       ]
     },
     {
@@ -2569,10 +2622,37 @@
       "prompt_hash": "498a7f3e7a0a4d41a200bc6e719fbff7ce60d7c581b2e86fb86c4701e826654a",
       "full_prompt_hash": "f53ced7db49a4658cc1a35c76013bf3a4d9fc62b2a11e68b985995bc9f5100dd",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0073"
+      "request_id": "REQ-0073",
+      "attempt_dates": [
+        "2026-11-17",
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-20"
+      ]
     },
     {
       "item_id": "mid_11",
@@ -2751,10 +2831,37 @@
       "prompt_hash": "ab1bde6c311f3939c3fab51d8d71defe25caa1d44f3b0418c35c6af9a3e2ce3e",
       "full_prompt_hash": "632e341784e13700523c6f6ecc2c6951564414e6fc6d04d14ceac6e3450c19d3",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0081"
+      "request_id": "REQ-0081",
+      "attempt_dates": [
+        "2026-11-20",
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-21"
+      ]
     },
     {
       "item_id": "early_44",
@@ -2771,10 +2878,37 @@
       "prompt_hash": "e9fa1a385895b9ceabe412ed2a42e288b09657d69f6da761453a6363ae71a3dd",
       "full_prompt_hash": "141d4f25c6b288e14e8c69fc905ae8aca4c6242477bd0671de142d1980540b86",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0082"
+      "request_id": "REQ-0082",
+      "attempt_dates": [
+        "2026-11-20",
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-21"
+      ]
     },
     {
       "item_id": "mid_16",
@@ -2814,10 +2948,31 @@
       "prompt_hash": "26a987221b546f9d3b0218101cedd70db37c163d52470bf085362caf5d381313",
       "full_prompt_hash": "d3ac0a623774d64ae725086bb036cf633794f48d3bfac48a991501107bc5957c",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 3,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0084"
+      "request_id": "REQ-0084",
+      "attempt_dates": [
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-21"
+      ]
     },
     {
       "item_id": "early_1",
@@ -2834,10 +2989,37 @@
       "prompt_hash": "f9becac60a0171ec7119eb45a4389dd59bdc2db1e5ca5fd170c7d00667f1e218",
       "full_prompt_hash": "ff983a08f15f415aef4568db72e67dedc08881c27636ffe2219dfdf641c581d7",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0085"
+      "request_id": "REQ-0085",
+      "attempt_dates": [
+        "2026-11-21",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-22"
+      ]
     },
     {
       "item_id": "mid_1",
@@ -3028,10 +3210,37 @@
       "prompt_hash": "903828775d7c5c7113fa22d800cb499a8544aafbb3a1e143fddde73f680f4219",
       "full_prompt_hash": "fb0e566feeaed35c1f27470b8b0e60b584791abb2b50c593df6fdc680d09bd34",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0093"
+      "request_id": "REQ-0093",
+      "attempt_dates": [
+        "2026-11-21",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-22"
+      ]
     },
     {
       "item_id": "mid_35",
@@ -3124,10 +3333,37 @@
       "prompt_hash": "98fd7a0dd04f1f6abccc63b5bdff212af1ca1327cf54af764daff1c9354723e5",
       "full_prompt_hash": "029b0abef35aa0264fb783cb2e27e5c22a1e3d93b455b1ecd04fc021189a4e6b",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0097"
+      "request_id": "REQ-0097",
+      "attempt_dates": [
+        "2026-11-21",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-22"
+      ]
     },
     {
       "item_id": "mid_16",
@@ -3144,10 +3380,37 @@
       "prompt_hash": "083cf6941b73d76da605c90d7e77465fca75c611d928b93accfb00be30deda32",
       "full_prompt_hash": "32a86aeb72f2a8c06ed0a325ded5a82db28f53c16eb88f6572837a98bb00744e",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0098"
+      "request_id": "REQ-0098",
+      "attempt_dates": [
+        "2026-11-22",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-23"
+      ]
     },
     {
       "item_id": "early_49",
@@ -3193,10 +3456,31 @@
       "prompt_hash": "9a822f22aea70860af1d54534aba218d8dda8c507807842c53fa73d3b8ad480e",
       "full_prompt_hash": "be77a413ec4ae50ae67e77f92986d24020b1df22e680241f77a92afa0974f2cf",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 3,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0100"
+      "request_id": "REQ-0100",
+      "attempt_dates": [
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-23"
+      ]
     },
     {
       "item_id": "mid_34",
@@ -3351,11 +3635,32 @@
       },
       "prompt_hash": "b431fbf5ed84caf77fb71ae6b69a36094a0ec76c619a113c8b4c5b8e06c77d13",
       "full_prompt_hash": "a21265f2e8ddaf610225b997747be75ccce94bc728fa9971dc7f22279499328a",
-      "status": "pending",
-      "attempts": 0,
-      "error_history": [],
-      "completed_at": null,
-      "request_id": "REQ-0106"
+      "status": "done",
+      "attempts": 3,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        },
+        {
+          "attempt": 3,
+          "status": "SUCCESS",
+          "elapsed": 47.34
+        }
+      ],
+      "completed_at": "2026-11-25T16:37:56.710471",
+      "request_id": "REQ-0106",
+      "attempt_dates": [
+        "2026-11-23",
+        "2026-11-23",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "late_26",
@@ -3453,10 +3758,37 @@
       "prompt_hash": "3d269d6f2dd5eaa3169c6b5ceda36820ebecf2576c7272503295459488f1e722",
       "full_prompt_hash": "db2a8e67164ec775b598b0af2cbc34fa86b842475d7fd6c16a26a0cc75c33e51",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 4,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "[WinError 10053] An established connection was aborted by the software in your host machine"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        },
+        {
+          "attempt": 3,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0110"
+      "request_id": "REQ-0110",
+      "attempt_dates": [
+        "2026-11-23",
+        "2026-11-23",
+        "2026-11-25",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "late_9",
@@ -3473,10 +3805,25 @@
       "prompt_hash": "e4b7608929518b8ab0d8478ac4e2f7187f5f4696c744b9125616a075241c8bdd",
       "full_prompt_hash": "a973497184dfc674cecd6230f7adca414363f473d7891e6c164fdf599908332e",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 2,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0111"
+      "request_id": "REQ-0111",
+      "attempt_dates": [
+        "2026-11-25",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "mid_17",
@@ -3493,10 +3840,25 @@
       "prompt_hash": "3ee0c86cf044460e4438cfe91305b1a8d2f70b7ac149289f4b72896e4ecf4b23",
       "full_prompt_hash": "3014d017192f20dde1818d7f5547b2abbb9c66b6caac14c367b3d42cdd16e46e",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 2,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "[WinError 10053] An established connection was aborted by the software in your host machine"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "[Errno 11001] getaddrinfo failed"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0112"
+      "request_id": "REQ-0112",
+      "attempt_dates": [
+        "2026-11-25",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "early_19",
@@ -3513,10 +3875,25 @@
       "prompt_hash": "36da6b143a81dc21ca73c01c5c8ef51a7b1316014d1c6210154d599910df8b06",
       "full_prompt_hash": "482d4f642799db4490ea187cfdf4add257bc1d4a0785b3acc553d3e4c569852e",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 2,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "The read operation timed out"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0113"
+      "request_id": "REQ-0113",
+      "attempt_dates": [
+        "2026-11-25",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "early_23",
@@ -3562,10 +3939,25 @@
       "prompt_hash": "ef3d4fb5c597a98a2461afd7c3476573efdd673c9ac4791faae69d59f591a118",
       "full_prompt_hash": "c4ffc4b3a1962d51871a063fbebe05a3dee0c324e05f97f8475aa42880eb20dd",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 2,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 2,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0115"
+      "request_id": "REQ-0115",
+      "attempt_dates": [
+        "2026-11-25",
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "early_21",
@@ -3628,10 +4020,19 @@
       "prompt_hash": "73b220ec006cc271c28d12c2d2deebbd62469da59580eeda02ae04d3e6e297a4",
       "full_prompt_hash": "55ff08d4282ef9c42babe0e622bc454b358aa33c62d8feb9afd1fd141cb2e964",
       "status": "pending",
-      "attempts": 0,
-      "error_history": [],
+      "attempts": 1,
+      "error_history": [
+        {
+          "attempt": 1,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      ],
       "completed_at": null,
-      "request_id": "REQ-0118"
+      "request_id": "REQ-0118",
+      "attempt_dates": [
+        "2026-11-25"
+      ]
     },
     {
       "item_id": "early_24",
@@ -9265,8 +9666,8 @@
       },
       "prompt_hash": "c9808fb9620e6f747406b32e01d91116b6b1eac0c426c92cdade4337402cf3b0",
       "full_prompt_hash": "c03d202b57b6564d836cd3c0ca5d2c8a7b206a2430a55eb96c2d0335cb19e9ab",
-      "status": "failed",
-      "attempts": 3,
+      "status": "done",
+      "attempts": 7,
       "error_history": [
         {
           "attempt": 1,
@@ -9282,15 +9683,45 @@
           "attempt": 3,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407846",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 5,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 6,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 7,
+          "status": "SUCCESS",
+          "elapsed": 7.9
         }
       ],
-      "completed_at": "2026-11-05T17:46:31.668889",
       "request_id": "REQ-0336",
       "attempt_dates": [
         "2026-11-05",
         "2026-11-05",
-        "2026-11-05"
-      ]
+        "2026-11-05",
+        "2026-11-19",
+        "2026-11-19",
+        "2026-11-19",
+        "2026-11-20"
+      ],
+      "completed_at": "2026-11-20T19:18:34.898014"
     },
     {
       "item_id": "mid_5",
@@ -9404,8 +9835,8 @@
       },
       "prompt_hash": "340de9f69da3408e799bf041ac5dd2bea352c67455b574be8cc79e10d4d1fae2",
       "full_prompt_hash": "9717fc15f257f115235fc89b31c597e8a17cc40541c44bc5796edd413d29aa82",
-      "status": "failed",
-      "attempts": 3,
+      "status": "done",
+      "attempts": 5,
       "error_history": [
         {
           "attempt": 1,
@@ -9421,15 +9852,33 @@
           "attempt": 3,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407851",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
+        },
+        {
+          "attempt": 4,
+          "status": "ERROR",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 5,
+          "status": "SUCCESS",
+          "elapsed": 5.65
         }
       ],
-      "completed_at": "2026-11-05T17:47:23.788874",
       "request_id": "REQ-0341",
       "attempt_dates": [
         "2026-11-05",
         "2026-11-05",
-        "2026-11-05"
-      ]
+        "2026-11-05",
+        "2026-11-19",
+        "2026-11-19"
+      ],
+      "completed_at": "2026-11-19T22:04:03.486615"
     },
     {
       "item_id": "late_12",
@@ -9670,8 +10119,8 @@
       },
       "prompt_hash": "7d85252101201f282e7480039e6bf228f724a7e07a6f1c7dd92b99eb6cf2b247",
       "full_prompt_hash": "937707e9237c8faff1d52de243341a3d00ef8932a2ec55c73d8855dacac549c1",
-      "status": "failed",
-      "attempts": 3,
+      "status": "done",
+      "attempts": 4,
       "error_history": [
         {
           "attempt": 1,
@@ -9687,15 +10136,27 @@
           "attempt": 3,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407854",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
+        },
+        {
+          "attempt": 4,
+          "status": "SUCCESS",
+          "elapsed": 11.14
         }
       ],
-      "completed_at": "2026-11-05T17:48:29.721283",
       "request_id": "REQ-0351",
       "attempt_dates": [
         "2026-11-05",
         "2026-11-05",
-        "2026-11-05"
-      ]
+        "2026-11-05",
+        "2026-11-19"
+      ],
+      "completed_at": "2026-11-19T22:04:13.727529"
     },
     {
       "item_id": "early_39",
@@ -13898,8 +14359,8 @@
       },
       "prompt_hash": "96167e74d944569359512957b9e99834c7ad716047f7e962e4cdce13c93c0c74",
       "full_prompt_hash": "2bf4e77dab0feda9374f62b245966755ce930690acc14abc57cadf62d42b0af2",
-      "status": "failed",
-      "attempts": 3,
+      "status": "done",
+      "attempts": 4,
       "error_history": [
         {
           "attempt": 1,
@@ -13915,15 +14376,27 @@
           "attempt": 3,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407875",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
+        },
+        {
+          "attempt": 4,
+          "status": "SUCCESS",
+          "elapsed": 24.69
         }
       ],
-      "completed_at": "2026-11-11T20:09:01.174323",
       "request_id": "REQ-0512",
       "attempt_dates": [
         "2026-11-11",
         "2026-11-11",
-        "2026-11-11"
-      ]
+        "2026-11-11",
+        "2026-11-19"
+      ],
+      "completed_at": "2026-11-19T22:04:29.450377"
     },
     {
       "item_id": "mid_15",
@@ -13968,8 +14441,8 @@
       },
       "prompt_hash": "340de9f69da3408e799bf041ac5dd2bea352c67455b574be8cc79e10d4d1fae2",
       "full_prompt_hash": "9717fc15f257f115235fc89b31c597e8a17cc40541c44bc5796edd413d29aa82",
-      "status": "failed",
-      "attempts": 3,
+      "status": "done",
+      "attempts": 4,
       "error_history": [
         {
           "attempt": 1,
@@ -13985,15 +14458,27 @@
           "attempt": 3,
           "status": "ERROR",
           "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        {
+          "attempt": 3,
+          "status": "RESTORED_TO_PENDING",
+          "timestamp": "2026-11-19T21:55:16.407877",
+          "reason": "Researcher decision 19 Nov 2026: Uniform retry policy for infrastructure failures"
+        },
+        {
+          "attempt": 4,
+          "status": "SUCCESS",
+          "elapsed": 20.08
         }
       ],
-      "completed_at": "2026-11-11T20:10:19.605482",
       "request_id": "REQ-0514",
       "attempt_dates": [
         "2026-11-11",
         "2026-11-11",
-        "2026-11-11"
-      ]
+        "2026-11-11",
+        "2026-11-19"
+      ],
+      "completed_at": "2026-11-19T22:05:07.231621"
     },
     {
       "item_id": "early_47",

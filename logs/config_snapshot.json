@@ -2,9 +2,13 @@
   "snapshot_metadata": {
     "created_at_wib": "2026-11-11T20:16:30+07:00",
     "created_at_pt": "2026-11-11T05:16:30-08:00",
-    "run_daily_sha256": "6eba814bc477bed1f3b24c11375530962afa24d8f1089ed89c0384102f5e6322",
+    "run_daily_sha256": "3476c36389fd3cafcab077c126f23f81c317fc89e94194e3cfd2820866ca7b83",
     "backup_path": "backups/src_2026-11-11/",
-    "notes": "Snapshot of formal experiment configuration per condition from data/experiment_queue.json. Affirms that temperature, top_p, and top_k are omitted (None) to enforce Google API default model sampling as designed."
+    "notes": "Snapshot of formal experiment configuration per condition from data/experiment_queue.json. Affirms that temperature, top_p, and top_k are omitted (None) to enforce Google API default model sampling as designed.",
+    "previous_run_daily_sha256": "6eba814bc477bed1f3b24c11375530962afa24d8f1089ed89c0384102f5e6322",
+    "updated_at_wib": "2026-11-19T22:00:54.301922",
+    "update_backup_path": "backups/src_2026-11-19/run_daily.py",
+    "update_note": "Researcher Decision 19 Nov 2026: Implemented 503 CB reset on non-503, 3.8 queue reordering (>=2 days at back), 15m pacing, 12h sleep guard, and 2.5 uniform retry policy"
   },
   "conditions": {
     "L25L-OFF": {
@@ -69,4 +73,3 @@
     }
   }
 }
-

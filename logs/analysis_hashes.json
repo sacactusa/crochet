@@ -1,0 +1,26 @@
+{
+  "updated_at_wib": "2026-11-20T20:05:32.609430",
+  "description": "Cryptographic hashes of frozen 2.5 dataset and analysis pipeline scripts",
+  "hashes": {
+    "src/normalize.py": {
+      "sha256": "20ee1f1cb6a3f442364190f0c186b55894ea8d236171296546c63957d5d6b38a",
+      "bytes": 3589
+    },
+    "src/compile_eval.js": {
+      "sha256": "b8453e0d9dba7a3705248f505eba5152295f21dec68c763bbc0f638e0fc8ff1d",
+      "bytes": 4942
+    },
+    "src/analyze.py": {
+      "sha256": "597f67e53879cbeaee8d584a10ebf80e4764bd6680670a2250b6ffc64ad69b00",
+      "bytes": 8342
+    },
+    "src/analyze_rm1_rm2.py": {
+      "sha256": "44af3f5a5098973cb0a669a4882eefa001e921b4d3bf77d7518e2deb0412321e",
+      "bytes": 10820
+    },
+    "data/frozen_2.5.jsonl": {
+      "sha256": "fbbc5b28f3315773f0239d8ddc28cf4daeb90e971fcd42370a8111169d480f72",
+      "bytes": 393199
+    }
+  }
+}
